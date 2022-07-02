@@ -1,0 +1,1 @@
+const isPalindrome = (x) => [...`${x}`].reverse().join('') == x
