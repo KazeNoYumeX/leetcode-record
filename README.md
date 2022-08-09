@@ -1,5 +1,5 @@
 ---
-description: JavaScript & PHP Solutions for Leetcode
+description: JavaScript & PHP & MySQL Solutions for Leetcode
 ---
 
 # LeetCode
