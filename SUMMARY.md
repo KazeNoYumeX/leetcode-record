@@ -21,6 +21,8 @@
 * [584. Find Customer Referee](problems/584.-find-customer-referee.md)
 * [595. Big Countries](problems/595.-big-countries.md)
 * [617. Merge Two Binary Trees](problems/617.-merge-two-binary-trees.md)
+* [627. Swap Salary](problems/627.-swap-salary.md)
 * [1710. Maximum Units on a Truck](problems/1710.-maximum-units-on-a-truck.md)
 * [1757. Recyclable and Low Fat Products](problems/1757.-recyclable-and-low-fat-products.md)
+* [1873. Calculate Special Bonus](problems/1873.-calculate-special-bonus.md)
 * [1929. Concatenation of Array](problems/1929.-concatenation-of-array.md)
