@@ -28,5 +28,7 @@
 * [1667. Fix Names in a Table](problems/1667.-fix-names-in-a-table.md)
 * [1710. Maximum Units on a Truck](problems/1710.-maximum-units-on-a-truck.md)
 * [1757. Recyclable and Low Fat Products](problems/1757.-recyclable-and-low-fat-products.md)
+* [1795. Rearrange Products Table](problems/1795.-rearrange-products-table.md)
 * [1873. Calculate Special Bonus](problems/1873.-calculate-special-bonus.md)
 * [1929. Concatenation of Array](problems/1929.-concatenation-of-array.md)
+* [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
