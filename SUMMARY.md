@@ -21,6 +21,7 @@
 * [196. Delete Duplicate Emails](problems/196.-delete-duplicate-emails.md)
 * [197. Rising Temperature](problems/197.-rising-temperature.md)
 * [509. Fibonacci Number](problems/509.-fibonacci-number.md)
+* [511. Game Play Analysis I](problems/511.-game-play-analysis-i.md)
 * [584. Find Customer Referee](problems/584.-find-customer-referee.md)
 * [586. Customer Placing the Largest Number of Orders](problems/586.-customer-placing-the-largest-number-of-orders.md)
 * [595. Big Countries](problems/595.-big-countries.md)
