@@ -41,5 +41,6 @@
 * [1757. Recyclable and Low Fat Products](problems/1757.-recyclable-and-low-fat-products.md)
 * [1795. Rearrange Products Table](problems/1795.-rearrange-products-table.md)
 * [1873. Calculate Special Bonus](problems/1873.-calculate-special-bonus.md)
+* [1890. The Latest Login in 2020](problems/1890.-the-latest-login-in-2020.md)
 * [1929. Concatenation of Array](problems/1929.-concatenation-of-array.md)
 * [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
