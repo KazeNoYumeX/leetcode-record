@@ -29,6 +29,6 @@ insert into Activities (sell_date, product)
 values ('2020-05-30', 'T-Shirt');
 
 # Solution
-SELECT sell_date, COUNT(DISTINCT product) AS num_sold, GROUP_CONCAT(DISTINCT product ORDER BY product) as products
-FROM Activities
-GROUP BY sell_date;
+select sell_date, count(distinct product) as num_sold, group_concat(distinct product order by product) as products
+from Activities
+group by sell_date;

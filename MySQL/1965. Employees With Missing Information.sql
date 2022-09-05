@@ -34,11 +34,11 @@ insert into Salaries (employee_id, salary)
 values ('4', '63539');
 
 # Solution
-SELECT employee_id
-FROM Employees
-WHERE employee_id NOT IN (SELECT employee_id FROM Salaries)
-UNION
-SELECT employee_id
-FROM Salaries
-WHERE employee_id NOT IN (SELECT employee_id FROM Employees)
-ORDER BY 1
+select employee_id
+from Employees
+where employee_id not in (select employee_id from Salaries)
+union
+select employee_id
+from Salaries
+where employee_id not in (select employee_id from Employees)
+order by 1

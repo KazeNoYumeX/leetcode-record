@@ -31,6 +31,6 @@ insert into Address (addressId, personId, city, state)
 values ('2', '3', 'Leetcode', 'California');
 
 # Solution
-SELECT Person.firstName, Person.lastName, Address.city, Address.state
+select Person.firstName, Person.lastName, Address.city, Address.state
 from Person
-         LEFT JOIN Address on Person.personId = Address.personId;
+         left join Address on Person.personId = Address.personId;

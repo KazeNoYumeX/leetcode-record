@@ -34,7 +34,7 @@ insert into Orders (id, customerId)
 values ('2', '1');
 
 # Solution
-SELECT c.name as Customers
+select c.name as Customers
 from Customers as c
-         LEFT JOIN Orders as o on c.Id = o.CustomerId
-WHERE o.CustomerId is NULL;
+         left join Orders as o on c.Id = o.CustomerId
+where o.CustomerId is null;

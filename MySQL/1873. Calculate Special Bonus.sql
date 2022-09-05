@@ -24,6 +24,6 @@ insert into Employees (employee_id, name, salary)
 values ('9', 'Kannon', '7700');
 
 # Solution
-SELECT employee_id, if(employee_id % 2 AND name not like "M%", salary, 0) as bonus
-FROM Employees
+select employee_id, if(employee_id % 2 and name not like "M%", salary, 0) as bonus
+from Employees
 order by employee_id;

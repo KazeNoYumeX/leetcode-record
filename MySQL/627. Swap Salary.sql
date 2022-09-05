@@ -21,4 +21,5 @@ insert into Salary (id, name, sex, salary)
 values ('4', 'D', 'f', '500');
 
 # Solution
-UPDATE Salary set sex = CHAR(ASCII('f') ^ ASCII('m') ^ ASCII(sex));
+update Salary
+set sex = char(ASCII('f') ^ ASCII('m') ^ ASCII(sex));

@@ -52,10 +52,8 @@ insert into Transactions (transaction_id, visit_id, amount)
 values ('13', '2', '970');
 
 # Solution
-select customer_id,
-       count(Visits.visit_id) as count_no_trans
+select customer_id, count(Visits.visit_id) as count_no_trans
 from Visits
-         left join Transactions
-                   on Visits.visit_id = Transactions.visit_id
+         left join Transactions on Visits.visit_id = Transactions.visit_id
 where Transactions.visit_id is null
 group by customer_id

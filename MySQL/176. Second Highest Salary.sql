@@ -18,4 +18,4 @@ values ('3', '300');
 # Solution
 select max(salary) as SecondHighestSalary
 from Employee
-where salary < (SELECT max(salary) FROM Employee)
+where salary < (select max(salary) from Employee)

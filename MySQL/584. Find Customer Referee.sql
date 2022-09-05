@@ -27,6 +27,7 @@ insert into Customer (id, name, referee_id)
 values ('6', 'Mark', '2');
 
 # Solution
-SELECT name
-FROM Customer
-WHERE referee_id <> 2 OR referee_id IS NULL;
+select name
+from Customer
+where referee_id <> 2
+   or referee_id is null;

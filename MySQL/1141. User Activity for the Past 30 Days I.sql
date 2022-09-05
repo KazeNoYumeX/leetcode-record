@@ -43,7 +43,7 @@ insert into Activity (user_id, session_id, activity_date, activity_type)
 values ('4', '3', '2019-06-25', 'end_session');
 
 # Solution
-select activity_date as day, COUNT(distinct user_id) as active_users
+select activity_date as day, count(distinct user_id) as active_users
 from activity
 where datediff('2019-07-27', activity_date) < 30
   and activity_date <= '2019-07-27'

@@ -24,6 +24,6 @@ insert into Patients (patient_id, patient_name, conditions)
 values ('5', 'Alain', 'DIAB201');
 
 # Solution
-SELECT *
-FROM Patients
-WHERE conditions REGEXP '(^DIAB1|(.*\\sDIAB1))'
+select *
+from Patients
+where conditions regexp '(^DIAB1|(.*\\sDIAB1))'
