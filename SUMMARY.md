@@ -13,6 +13,7 @@
 * [20. Valid Parentheses](problems/20.-valid-parentheses.md)
 * [26. Remove Duplicates from Sorted Array](problems/26.-remove-duplicates-from-sorted-array.md)
 * [46. Permutations](problems/46.-permutations.md)
+* [88. Merge Sorted Array](problems/88.-merge-sorted-array.md)
 * [104. Maximum Depth of Binary Tree](problems/104.-maximum-depth-of-binary-tree.md)
 * [175. Combine Two Tables](problems/175.-combine-two-tables.md)
 * [176. Second Highest Salary](problems/176.-second-highest-salary.md)
