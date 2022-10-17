@@ -1,13 +1,20 @@
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 const twoSum = (nums, target) => {
-    let out
-    nums.forEach((num, idx) => {
-        for (let i = 0; i < nums.length; i++) {
-            if (i !== idx) {
-                if ((nums[i] + num) == target) {
-                    out = i > idx ? [idx, i] : [i, idx]
-                }
-            }
+    const map = {}
+
+    for (let i = 0; i < nums.length; i++) {
+        const current = nums[i]
+        const another = target - current
+
+        if (map[another] >= 0) {
+            return [map[another], i]
         }
-    })
-    return out
-};
+
+        map[current] = i
+    }
+    return null
+}
