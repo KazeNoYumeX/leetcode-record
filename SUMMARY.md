@@ -24,6 +24,7 @@
 * [196. Delete Duplicate Emails](problems/196.-delete-duplicate-emails.md)
 * [197. Rising Temperature](problems/197.-rising-temperature.md)
 * [205. Isomorphic Strings](problems/205.-isomorphic-strings.md)
+* [206. Reverse Linked List](problems/206.-reverse-linked-list.md)
 * [392. Is Subsequence](problems/392.-is-subsequence.md)
 * [509. Fibonacci Number](problems/509.-fibonacci-number.md)
 * [511. Game Play Analysis I](problems/511.-game-play-analysis-i.md)

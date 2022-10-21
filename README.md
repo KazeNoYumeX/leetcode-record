@@ -1,5 +1,5 @@
 ---
-description: JavaScript & PHP & MySQL Solutions for Leetcode
+description: TypeScript, PHP, Python, JavaScript, MySQL Solutions for Leetcode
 ---
 
 # LeetCode
@@ -40,6 +40,7 @@ description: JavaScript & PHP & MySQL Solutions for Leetcode
 | 511  | [Game Play Analysis I](problems/511.-game-play-analysis-i.md)                                                                          | [MySQL](problems/511.-game-play-analysis-i.md#javascript)                                                                                                                            | Easy       |
 | 509  | [Fibonacci Number](problems/509.-fibonacci-number.md)                                                                                  | [JavaScript](problems/509.-fibonacci-number.md#javascript), [PHP](problems/509.-fibonacci-number.md#javascript-1)                                                                    | Easy       |
 | 392  | [Is Subsequence](problems/392.-is-subsequence.md)                                                                                      | [TypeScript](problems/392.-is-subsequence.md#typescript), [PHP](problems/392.-is-subsequence.md#php), [Python](problems/392.-is-subsequence.md#python)                               | Easy       |
+| 206  | [Reverse Linked List](problems/206.-reverse-linked-list.md)                                                                            | [TypeScript](problems/206.-reverse-linked-list.md#typescript), [PHP](problems/206.-reverse-linked-list.md#php), [Python](problems/206.-reverse-linked-list.md#python)                | Easy       |
 | 205  | [Isomorphic Strings](problems/205.-isomorphic-strings.md)                                                                              | [TypeScript](problems/205.-isomorphic-strings.md#typescript), [PHP](problems/205.-isomorphic-strings.md#php), [Python](problems/205.-isomorphic-strings.md#python)                   | Easy       |
 | 197  | [Rising Temperature](problems/197.-rising-temperature.md)                                                                              | [MySQL](problems/197.-rising-temperature.md#javascript)                                                                                                                              | Easy       |
 | 196  | [Delete Duplicate Emails](problems/196.-delete-duplicate-emails.md)                                                                    | [MySQL](problems/196.-delete-duplicate-emails.md#javascript)                                                                                                                         | Easy       |
