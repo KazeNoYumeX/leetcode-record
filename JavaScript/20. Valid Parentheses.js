@@ -3,30 +3,30 @@
  * @return {boolean}
  */
 const isValid = (s) => {
-    const len = s.length;
+    const len = s.length
 
     if (len % 2 !== 0) {
-        return false;
+        return false
     }
 
-    const stack = [];
+    const stack = []
     const close = {
         '}': '{',
         ']': '[',
         ')': '('
-    };
+    }
 
     for (let i = 0; i < len; ++i) {
         if (s[i] === '(' || s[i] === '[' || s[i] === '{') {
-            stack.push(s[i]);
+            stack.push(s[i])
         } else {
-            let last = stack.pop();
+            let last = stack.pop()
             if (last === close[s[i]]) {
-                continue;
+                continue
             } else {
-                return false;
+                return false
             }
         }
     }
-    return stack.length === 0;
-};
+    return stack.length === 0
+}

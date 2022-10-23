@@ -30,4 +30,4 @@ const mergeTwoLists = (list1: ListNode | null, list2: ListNode | null): ListNode
         list2.next = mergeTwoLists(list1, list2.next);
         return list2
     }
-};
+}
