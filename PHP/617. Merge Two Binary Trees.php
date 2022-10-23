@@ -1,26 +1,27 @@
 <?php
 
-/**
- * Definition for a binary tree node.
- * class TreeNode {
- *     public $val = null;
- *     public $left = null;
- *     public $right = null;
- *     function __construct($val = 0, $left = null, $right = null) {
- *         $this->val = $val;
- *         $this->left = $left;
- *         $this->right = $right;
- *     }
- * }
- */
+class TreeNode
+{
+    public $val = null;
+    public $left = null;
+    public $right = null;
+
+    function __construct($val = 0, $left = null, $right = null)
+    {
+        $this->val = $val;
+        $this->left = $left;
+        $this->right = $right;
+    }
+}
+
 class Solution
 {
     /**
-     * @param TreeNode $root1
-     * @param TreeNode $root2
+     * @param TreeNode|null $root1
+     * @param TreeNode|null $root2
      * @return TreeNode
      */
-    function mergeTrees($root1, $root2)
+    function mergeTrees(?TreeNode $root1, ?TreeNode $root2): TreeNode
     {
         if (!$root1)
             return $root2;
