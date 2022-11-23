@@ -29,6 +29,7 @@
 * [205. Isomorphic Strings](problems/205.-isomorphic-strings.md)
 * [206. Reverse Linked List](problems/206.-reverse-linked-list.md)
 * [278. First Bad Version](problems/278.-first-bad-version.md)
+* [279. Perfect Squares](problems/279.-perfect-squares.md)
 * [392. Is Subsequence](problems/392.-is-subsequence.md)
 * [409. Longest Palindrome](problems/409.-longest-palindrome.md)
 * [509. Fibonacci Number](problems/509.-fibonacci-number.md)
