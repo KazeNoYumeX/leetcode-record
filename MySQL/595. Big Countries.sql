@@ -26,7 +26,9 @@ insert into World (name, continent, area, population, gdp)
 values ('Angola', 'Africa', '1246700', '20609294', '100990000');
 
 # Solution
-select name, population, area
+select name,
+       population,
+       area
 from World
 where area >= 3000000
    or population >= 25000000;

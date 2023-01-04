@@ -36,5 +36,5 @@ values ('2', '1');
 # Solution
 select c.name as Customers
 from Customers as c
-         left join Orders as o on c.Id = o.CustomerId
+         left join Orders as o on c.id = o.CustomerId
 where o.CustomerId is null;
