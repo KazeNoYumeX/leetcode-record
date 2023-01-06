@@ -24,18 +24,21 @@ const nearestExit = (maze: string[][], entrance: number[]): number => {
         const qLen: number = quits.length
 
         for (let i = 0; i < qLen; i++) {
-            const [x, y]: number[] = quits.shift()
+            const curr = quits.shift()
+            if (curr) {
+                const [x, y]: number[] = curr
 
-            if (isExit(x, y))
-                return steps
+                if (isExit(x, y))
+                    return steps
 
-            for (const [dx, dy] of dir) {
-                const nx: number = x + dx
-                const ny: number = y + dy
+                for (const [dx, dy] of dir) {
+                    const nx: number = x + dx
+                    const ny: number = y + dy
 
-                if (nx >= 0 && nx < width && ny >= 0 && ny < length && maze[nx][ny] === '.') {
-                    maze[nx][ny] = 'x'
-                    quits.push([nx, ny])
+                    if (nx >= 0 && nx < width && ny >= 0 && ny < length && maze[nx][ny] === '.') {
+                        maze[nx][ny] = 'x'
+                        quits.push([nx, ny])
+                    }
                 }
             }
         }

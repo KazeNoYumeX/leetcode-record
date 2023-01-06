@@ -10,6 +10,11 @@ class Solution
     function isIsomorphic(string $s, string $t): bool
     {
         $obj = [];
+
+        if (strlen($s) !== strlen($t)) {
+            return false;
+        }
+
         for ($i = 0; $i < strlen($s); $i++) {
             if (isset($obj[$s[$i]])) {
                 if ($obj[$s[$i]] !== $t[$i]) {

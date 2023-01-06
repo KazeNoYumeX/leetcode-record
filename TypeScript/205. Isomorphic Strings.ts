@@ -1,5 +1,12 @@
+interface objectStr {
+    [key: string]: string;
+}
+
 const isIsomorphic = (s: string, t: string): boolean => {
-    const obj: object = {}
+    const obj: objectStr = {}
+
+    if (s.length !== t.length)
+        return false
 
     for (let i = 0; i < s.length; i++) {
         const strS: string = s[i]
