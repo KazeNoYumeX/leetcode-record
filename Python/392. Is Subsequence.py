@@ -1,3 +1,4 @@
+# noinspection PyMethodMayBeStatic
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         # Convert the string t into an iterable object t

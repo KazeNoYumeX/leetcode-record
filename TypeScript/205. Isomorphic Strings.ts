@@ -1,14 +1,18 @@
-interface objectStr {
+// noinspection JSUnusedGlobalSymbols
+
+interface combineObj {
     [key: string]: string;
 }
 
 const isIsomorphic = (s: string, t: string): boolean => {
-    const obj: objectStr = {}
+    const count:number = s.length
 
-    if (s.length !== t.length)
+    if (count !== t.length)
         return false
 
-    for (let i = 0; i < s.length; i++) {
+    const obj: combineObj = {}
+
+    for (let i = 0; i < count; i++) {
         const strS: string = s[i]
         const strT: string = t[i]
 

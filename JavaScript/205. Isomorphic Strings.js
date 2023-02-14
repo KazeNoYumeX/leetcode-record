@@ -1,15 +1,19 @@
+// noinspection JSUnusedGlobalSymbols
+
 /**
  * @param {string} s
  * @param {string} t
  * @return {boolean}
  */
 const isIsomorphic = (s, t) => {
-    const obj = {}
+    const count = s.length
 
-    if (s.length !== t.length)
+    if (count !== t.length)
         return false
 
-    for (let i = 0; i < s.length; i++) {
+    const obj = {}
+
+    for (let i = 0; i < count; i++) {
         const strS = s[i]
         const strT = t[i]
 

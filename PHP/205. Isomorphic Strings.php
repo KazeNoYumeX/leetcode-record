@@ -1,21 +1,25 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class Solution
 {
     /**
      * @param String $s
      * @param String $t
      * @return Boolean
+     * @noinspection PhpUnused
      */
     function isIsomorphic(string $s, string $t): bool
     {
-        $obj = [];
-
-        if (strlen($s) !== strlen($t)) {
+        $count = strlen($s);
+        if ($count !== strlen($t)) {
             return false;
         }
 
-        for ($i = 0; $i < strlen($s); $i++) {
+        $obj = [];
+
+        for ($i = 0; $i < $count; $i++) {
             if (isset($obj[$s[$i]])) {
                 if ($obj[$s[$i]] !== $t[$i]) {
                     return false;

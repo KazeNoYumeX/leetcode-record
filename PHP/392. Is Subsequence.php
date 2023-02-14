@@ -1,11 +1,14 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class Solution
 {
     /**
      * @param String $s
      * @param String $t
      * @return Boolean
+     * @noinspection PhpUnused
      */
     function isSubsequence(string $s, string $t): bool
     {
@@ -15,7 +18,7 @@ class Solution
 
         $array = str_split($s);
         foreach ($array as $str) {
-            if (strpos($t, $str) === false) {
+            if (!str_contains($t, $str)) {
                 return false;
             }
 
