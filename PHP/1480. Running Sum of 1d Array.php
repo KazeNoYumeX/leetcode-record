@@ -1,5 +1,7 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class Solution
 {
     /**
@@ -21,6 +23,7 @@ class Solution
     /**
      * @param Integer[] $nums
      * @return Integer[]
+     * @noinspection PhpUnused
      */
     function runningSum(array $nums): array
     {

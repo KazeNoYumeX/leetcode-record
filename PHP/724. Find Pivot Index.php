@@ -1,10 +1,12 @@
 <?php
+/** @noinspection PhpMultipleClassDeclarationsInspection */
 
 class Solution
 {
     /**
      * @param Integer[] $nums
      * @return Integer
+     * @noinspection PhpUnused
      */
     function pivotIndex(array $nums): int
     {

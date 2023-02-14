@@ -1,6 +1,6 @@
 from typing import List
 
-
+# noinspection PyMethodMayBeStatic
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         left, right = 0, sum(nums)

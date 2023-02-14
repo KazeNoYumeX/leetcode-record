@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 /**
  * @param {number[]} nums
  * @return {number}
@@ -8,11 +10,10 @@ const pivotIndex = (nums) => {
 
     for (let i = 0; i < nums.length; i++) {
         const current = nums[i]
-        right -= current
 
-        if (left === right) {
+        if (left === (right -= current))
             return i
-        }
+
         left += current
     }
     return -1
