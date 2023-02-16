@@ -1,9 +1,11 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class ListNode
 {
-    public $val = 0;
-    public $next = null;
+    public mixed $val = 0;
+    public mixed $next = null;
 
     function __construct($val = 0, $next = null)
     {
@@ -17,6 +19,7 @@ class Solution
     /**
      * @param ListNode|null $head
      * @return ListNode|null
+     * @noinspection PhpUnused
      */
     function reverseList(?ListNode $head): ?ListNode
     {

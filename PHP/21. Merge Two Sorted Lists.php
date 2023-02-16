@@ -1,9 +1,11 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class ListNode
 {
-    public $val = 0;
-    public $next = null;
+    public mixed $val = 0;
+    public mixed $next = null;
 
     function __construct($val = 0, $next = null)
     {
@@ -18,6 +20,7 @@ class Solution
      * @param ListNode|null $list1
      * @param ListNode|null $list2
      * @return ListNode|null
+     * @noinspection PhpUnused
      */
     function mergeTwoLists(?ListNode $list1, ?ListNode $list2): ?ListNode
     {
