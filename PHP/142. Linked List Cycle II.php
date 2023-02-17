@@ -1,9 +1,11 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class ListNode
 {
-    public $val = 0;
-    public $next = null;
+    public mixed $val = 0;
+    public mixed $next = null;
 
     function __construct($val = 0)
     {
@@ -14,10 +16,11 @@ class ListNode
 class Solution
 {
     /**
-     * @param ListNode $head
-     * @return ListNode
+     * @param ListNode|null $head
+     * @return ListNode|null
+     * @noinspection PhpUnused
      */
-    function detectCycle($head)
+    function detectCycle(?ListNode $head): ?ListNode
     {
         $map = new splObjectStorage();
         while ($head) {

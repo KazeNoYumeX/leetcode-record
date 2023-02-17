@@ -7,6 +7,7 @@ class ListNode:
         self.next = next
 
 
+# noinspection PyMethodMayBeStatic
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         slow = fast = head
