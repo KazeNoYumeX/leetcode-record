@@ -8,10 +8,10 @@ const twoSum = (nums, target) => {
 
     for (let i = 0; i < nums.length; i++) {
         const current = nums[i]
-        const another = target - current
+        const key = target - current
 
-        if (map[another] >= 0) {
-            return [map[another], i]
+        if (map[key] >= 0) {
+            return [map[key], i]
         }
 
         map[current] = i

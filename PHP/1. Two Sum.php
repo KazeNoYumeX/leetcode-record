@@ -1,23 +1,25 @@
 <?php
 
+/** @noinspection PhpMultipleClassDeclarationsInspection */
+
 class Solution
 {
     /**
      * @param Integer[] $nums
      * @param Integer $target
      * @return Integer[]
+     * @noinspection PhpUnused
      */
-    function twoSum($nums, $target)
+    function twoSum(array $nums, int $target): array
     {
-        $storage = [];
-        foreach ($nums as $i => $num) {
-            $key = $target - $num;
-            if (array_key_exists($key, $storage)) {
-                return [$storage[$key], $i];
+        $map = [];
+        foreach ($nums as $i => $current) {
+            $key = $target - $current;
+            if (array_key_exists($key, $map)) {
+                return [$map[$key], $i];
             }
-            $storage[$num] = $i;
+            $map[$current] = $i;
         }
-
         return [];
     }
 }
