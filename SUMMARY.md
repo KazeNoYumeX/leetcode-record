@@ -66,6 +66,7 @@
 * [1729. Find Followers Count](problems/1729.-find-followers-count.md)
 * [1741. Find Total Time Spent by Each Employee](problems/1741.-find-total-time-spent-by-each-employee.md)
 * [1757. Recyclable and Low Fat Products](problems/1757.-recyclable-and-low-fat-products.md)
+* [1768. Merge Strings Alternately](problems/1768.-merge-strings-alternately.md)
 * [1795. Rearrange Products Table](problems/1795.-rearrange-products-table.md)
 * [1873. Calculate Special Bonus](problems/1873.-calculate-special-bonus.md)
 * [1890. The Latest Login in 2020](problems/1890.-the-latest-login-in-2020.md)
