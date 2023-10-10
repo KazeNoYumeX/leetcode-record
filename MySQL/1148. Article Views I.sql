@@ -8,6 +8,7 @@ Create table If Not Exists Views
 );
 
 Truncate table Views;
+
 insert into Views (article_id, author_id, viewer_id, view_date)
 values ('1', '3', '5', '2019-08-01');
 
@@ -31,6 +32,6 @@ values ('3', '4', '4', '2019-07-21');
 
 # Solution
 select distinct author_id as id
-from views
+from Views
 where author_id = viewer_id
-order by id
+order by id;
