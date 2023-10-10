@@ -3,6 +3,4 @@
 
 # Just to maintain the pure theme of the project
 /node_modules
-package.json
 package-lock.json
-tsconfig.json
