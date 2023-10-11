@@ -64,6 +64,7 @@
 * [1581. Customer Who Visited but Did Not Make Any Transactions](problems/1581.-customer-who-visited-but-did-not-make-any-transactions.md)
 * [1587. Bank Account Summary II](problems/1587.-bank-account-summary-ii.md)
 * [1667. Fix Names in a Table](problems/1667.-fix-names-in-a-table.md)
+* [1683. Invalid Tweets](problems/1683.-invalid-tweets.md)
 * [1693. Daily Leads and Partners](problems/1693.-daily-leads-and-partners.md)
 * [1710. Maximum Units on a Truck](problems/1710.-maximum-units-on-a-truck.md)
 * [1729. Find Followers Count](problems/1729.-find-followers-count.md)
