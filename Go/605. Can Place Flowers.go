@@ -1,4 +1,4 @@
-package Go
+package main
 
 //goland:noinspection GoUnusedFunction
 func canPlaceFlowers(flowerbed []int, n int) bool {

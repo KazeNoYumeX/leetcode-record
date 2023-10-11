@@ -2,13 +2,11 @@
 
 class Solution
 {
-    /**
-     * @param String $s
-     * @return Integer
-     */
-    function lengthOfLongestSubstring(string $s): int
+    public function lengthOfLongestSubstring(string $s): int
     {
-        if (empty($s)) return 0;
+        if (empty($s)) {
+            return 0;
+        }
 
         $set = [];
         $count = [];
