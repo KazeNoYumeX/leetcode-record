@@ -3,10 +3,10 @@
 class Solution
 {
     /**
-     * @param Integer[] $nums
-     * @return Integer[]
+     * @param  int[]  $nums
+     * @return int[]
      */
-    function getConcatenation($nums)
+    public function getConcatenation($nums)
     {
         return array_merge($nums, $nums);
     }

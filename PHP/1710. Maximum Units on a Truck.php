@@ -3,11 +3,11 @@
 class Solution
 {
     /**
-     * @param Integer[][] $boxTypes
-     * @param Integer $truckSize
-     * @return Integer
+     * @param  int[][]  $boxTypes
+     * @param  int  $truckSize
+     * @return int
      */
-    function maximumUnits($boxTypes, $truckSize)
+    public function maximumUnits($boxTypes, $truckSize)
     {
         $count = 0;
 
@@ -20,6 +20,7 @@ class Solution
             $count += $amount * $box[1];
             $truckSize -= $amount;
         }
+
         return $count;
     }
 }

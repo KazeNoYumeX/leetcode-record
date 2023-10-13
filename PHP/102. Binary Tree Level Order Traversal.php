@@ -3,14 +3,15 @@
 /**
  * Definition for a binary tree node.
  */
-
 class TreeNode
 {
     public $val = null;
+
     public $left = null;
+
     public $right = null;
 
-    function __construct($val = 0, $left = null, $right = null)
+    public function __construct($val = 0, $left = null, $right = null)
     {
         $this->val = $val;
         $this->left = $left;
@@ -21,10 +22,9 @@ class TreeNode
 class Solution
 {
     /**
-     * @param TreeNode|null $root
-     * @return Integer[][]
+     * @return int[][]
      */
-    function levelOrder(?TreeNode $root): array
+    public function levelOrder(?TreeNode $root): array
     {
         $queue = [$root];
         $ret = [];
@@ -37,15 +37,18 @@ class Solution
                 if ($curr) {
                     $row[] = $curr->val;
 
-                    if ($curr->left)
+                    if ($curr->left) {
                         $queue[] = $curr->left;
+                    }
 
-                    if ($curr->right)
+                    if ($curr->right) {
                         $queue[] = $curr->right;
+                    }
                 }
             }
             $ret[] = $row;
         }
+
         return $ret;
     }
 }

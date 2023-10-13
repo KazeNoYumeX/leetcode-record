@@ -1,16 +1,15 @@
 <?php
 
 /** @noinspection PhpMultipleClassDeclarationsInspection */
-
 class Solution
 {
     /**
-     * @param Integer[] $nums
-     * @param Integer $target
-     * @return Integer[]
+     * @param  int[]  $nums
+     * @return int[]
+     *
      * @noinspection PhpUnused
      */
-    function twoSum(array $nums, int $target): array
+    public function twoSum(array $nums, int $target): array
     {
         $map = [];
         foreach ($nums as $i => $current) {
@@ -20,6 +19,7 @@ class Solution
             }
             $map[$current] = $i;
         }
+
         return [];
     }
 }

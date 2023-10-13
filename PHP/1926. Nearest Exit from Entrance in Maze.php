@@ -3,7 +3,9 @@
 class Solution
 {
     private array $entrance;
+
     private int $width;
+
     private int $length;
 
     public function __construct()
@@ -13,25 +15,20 @@ class Solution
         $this->length = 0;
     }
 
-    /**
-     * @param int $x
-     * @param int $y
-     * @return bool
-     */
-    function isExit(int $x, int $y): bool
+    public function isExit(int $x, int $y): bool
     {
         if ($x === 0 || $y === 0 || $x === $this->width - 1 || $y === $this->length - 1) {
             return $x !== $this->entrance[0] || $y !== $this->entrance[1];
         }
+
         return false;
     }
 
     /**
-     * @param String[][] $maze
-     * @param Integer[] $entrance
-     * @return Integer
+     * @param  string[][]  $maze
+     * @param  int[]  $entrance
      */
-    function nearestExit(array $maze, array $entrance): int
+    public function nearestExit(array $maze, array $entrance): int
     {
         $this->width = count($maze);
         $this->length = count($maze[0]);
@@ -45,7 +42,7 @@ class Solution
             [-1, 0],
             [1, 0],
             [0, -1],
-            [0, 1]
+            [0, 1],
         ];
 
         while (count($quits)) {
@@ -54,8 +51,9 @@ class Solution
             for ($i = 0; $i < $qLen; $i++) {
                 [$x, $y] = array_shift($quits);
 
-                if ($this->isExit($x, $y))
+                if ($this->isExit($x, $y)) {
                     return $steps;
+                }
 
                 for ($j = 0; $j < count($dirs); $j++) {
                     $nx = $x + $dirs[$j][0];
@@ -69,6 +67,7 @@ class Solution
             }
             $steps++;
         }
+
         return -1;
     }
 }

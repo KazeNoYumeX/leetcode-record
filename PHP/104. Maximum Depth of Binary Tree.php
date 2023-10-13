@@ -16,10 +16,10 @@
 class Solution
 {
     /**
-     * @param TreeNode $root
-     * @return Integer
+     * @param  TreeNode  $root
+     * @return int
      */
-    function maxDepth($root)
+    public function maxDepth($root)
     {
         return empty($root) ? 0 : max($this->maxDepth($root->left), $this->maxDepth($root->right)) + 1;
     }
