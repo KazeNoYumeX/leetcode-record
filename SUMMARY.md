@@ -51,6 +51,7 @@
 * [876. Middle of the Linked List](problems/876.-middle-of-the-linked-list.md)
 * [946. Validate Stack Sequences](problems/946.-validate-stack-sequences.md)
 * [1050. Actors and Directors Who Cooperated At Least Three Times](problems/1050.-actors-and-directors-who-cooperated-at-least-three-times.md)
+* [1068. Product Sales Analysis I](problems/1068.-product-sales-analysis-i.md)
 * [1071. Greatest Common Divisor of Strings](problems/1071.-greatest-common-divisor-of-strings.md)
 * [1084. Sales Analysis III](problems/1084.-sales-analysis-iii.md)
 * [1141. User Activity for the Past 30 Days I](problems/1141.-user-activity-for-the-past-30-days-i.md)
