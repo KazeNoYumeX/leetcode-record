@@ -13,6 +13,7 @@ Create table If Not Exists Transactions
 );
 
 Truncate table Visits;
+
 insert into Visits (visit_id, customer_id)
 values ('1', '23');
 
@@ -56,4 +57,4 @@ select customer_id, count(Visits.visit_id) as count_no_trans
 from Visits
          left join Transactions on Visits.visit_id = Transactions.visit_id
 where Transactions.visit_id is null
-group by customer_id
+group by customer_id;
