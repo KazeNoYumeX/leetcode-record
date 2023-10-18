@@ -1,16 +1,12 @@
 <?php
 
 /** @noinspection PhpMultipleClassDeclarationsInspection */
-
 class Solution
 {
     /**
-     * @param String $s
-     * @param String $t
-     * @return Boolean
      * @noinspection PhpUnused
      */
-    function isIsomorphic(string $s, string $t): bool
+    public function isIsomorphic(string $s, string $t): bool
     {
         $count = strlen($s);
         if ($count !== strlen($t)) {
@@ -31,6 +27,7 @@ class Solution
                 $obj[$s[$i]] = $t[$i];
             }
         }
+
         return true;
     }
 }

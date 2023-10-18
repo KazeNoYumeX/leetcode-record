@@ -1,13 +1,13 @@
 <?php
 
 /** @noinspection PhpMultipleClassDeclarationsInspection */
-
 class ListNode
 {
     public mixed $val = 0;
+
     public mixed $next = null;
 
-    function __construct($val = 0, $next = null)
+    public function __construct($val = 0, $next = null)
     {
         $this->val = $val;
         $this->next = $next;
@@ -17,17 +17,16 @@ class ListNode
 class Solution
 {
     /**
-     * @param ListNode|null $head
-     * @return ListNode|null
      * @noinspection PhpUnused
      */
-    function reverseList(?ListNode $head): ?ListNode
+    public function reverseList(?ListNode $head): ?ListNode
     {
         $prev = null;
 
         while ($head) {
-            list($head->next, $prev, $head) = array($prev, $head, $head->next);
+            [$head->next, $prev, $head] = [$prev, $head, $head->next];
         }
+
         return $prev;
     }
 }

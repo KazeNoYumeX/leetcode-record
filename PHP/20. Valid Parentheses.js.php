@@ -3,10 +3,10 @@
 class Solution
 {
     /**
-     * @param String $s
-     * @return Boolean
+     * @param  string  $s
+     * @return bool
      */
-    function isValid($s)
+    public function isValid($s)
     {
         $len = strlen($s);
 
@@ -18,7 +18,7 @@ class Solution
         $close = [
             '}' => '{',
             ']' => '[',
-            ')' => '('
+            ')' => '(',
         ];
 
         for ($i = 0; $i < $len; $i++) {
@@ -33,6 +33,7 @@ class Solution
                 }
             }
         }
+
         return count($stack) === 0;
     }
 }

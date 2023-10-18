@@ -2,11 +2,7 @@
 
 class Solution
 {
-    /**
-     * @param Integer $n
-     * @return Integer
-     */
-    function numSquares(int $n): int
+    public function numSquares(int $n): int
     {
         $dp = [];
         $dp[0] = 0;
@@ -18,6 +14,7 @@ class Solution
                 $dp[$i + $j * $j] = min($dp[$i + $j * $j], $dp[$i] + 1);
             }
         }
+
         return $dp[$n];
     }
 }

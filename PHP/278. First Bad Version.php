@@ -6,10 +6,9 @@
 class Solution extends VersionControl
 {
     /**
-     * @param Integer $n
-     * @return Integer
+     * @param  int  $n
      */
-    function firstBadVersion($n): int
+    public function firstBadVersion($n): int
     {
         $curr = 1;
 
@@ -21,6 +20,7 @@ class Solution extends VersionControl
                 $curr = $mid + 1;
             }
         }
+
         return $curr;
     }
 }

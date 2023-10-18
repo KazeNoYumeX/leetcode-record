@@ -3,12 +3,12 @@
 class Solution
 {
     /**
-     * @param Integer[] $nums
-     * @return Integer
+     * @param  int[]  $nums
      */
-    function removeDuplicates(array &$nums): int
+    public function removeDuplicates(array &$nums): int
     {
         $nums = array_flip(array_flip($nums));
+
         return count($nums);
     }
 }
