@@ -1,12 +1,9 @@
 <?php
 
 /** @noinspection PhpMultipleClassDeclarationsInspection */
-class Solution {
-
+class Solution
+{
     /**
-     * @param String $s
-     *
-     * @return String
      * @noinspection PhpUnused
      */
     public function reverseVowels(string $s): string

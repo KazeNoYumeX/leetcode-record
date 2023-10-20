@@ -1,5 +1,6 @@
 package main
 
+//goland:noinspection GoUnusedFunction
 func productExceptSelf(nums []int) []int {
 	numCount := len(nums)
 	result := make([]int, numCount)
