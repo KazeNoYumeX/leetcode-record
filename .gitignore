@@ -4,3 +4,7 @@
 # Just to maintain the pure theme of the project
 /node_modules
 package-lock.json
+
+# Composer
+/vendor
+composer.lock

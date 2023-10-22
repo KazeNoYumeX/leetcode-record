@@ -1,5 +1,5 @@
 ---
-Description: TypeScript, PHP, Python, JavaScript, MySQL Solutions for Leetcode
+Description: LeetCode solutions using PHP, TypeScript, Python, and Go.
 ---
 
 # LeetCode
