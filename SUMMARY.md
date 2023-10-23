@@ -37,6 +37,7 @@
 * [345. Reverse Vowels of a String](problems/345.-reverse-vowels-of-a-string.md)
 * [392. Is Subsequence](problems/392.-is-subsequence.md)
 * [409. Longest Palindrome](problems/409.-longest-palindrome.md)
+* [443. String Compression](problems/443.-string-compression.md)
 * [509. Fibonacci Number](problems/509.-fibonacci-number.md)
 * [511. Game Play Analysis I](problems/511.-game-play-analysis-i.md)
 * [584. Find Customer Referee](problems/584.-find-customer-referee.md)

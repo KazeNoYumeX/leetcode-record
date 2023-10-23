@@ -2,11 +2,7 @@
 
 class Solution
 {
-    /**
-     * @param String $s
-     * @return Integer
-     */
-    function longestPalindrome(string $s): int
+    public function longestPalindrome(string $s): int
     {
         if (empty($s) || empty(strlen($s))) {
             return 0;
@@ -22,8 +18,10 @@ class Solution
                 $check[$s[$i]] = 1;
             }
         }
-        if (count($check) != 0)
+        if (count($check) != 0) {
             return $count * 2 + 1;
+        }
+
         return $count * 2;
     }
 }

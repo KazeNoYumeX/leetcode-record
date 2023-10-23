@@ -10,23 +10,21 @@ class Solution
     }
 
     /**
-     * @param Integer[] $nums
-     * @return Integer[][]
+     * @param  int[]  $nums
+     * @return int[][]
      */
-    function permute(array $nums): array
+    public function permute(array $nums): array
     {
         $this->backtrack($nums, []);
+
         return $this->ret;
     }
 
-    /**
-     * @param array $list
-     * @param array $temp
-     * @return void
-     */
-    function backtrack(array $list, array $temp): void
+    public function backtrack(array $list, array $temp): void
     {
-        if (count($temp) === count($list)) $this->ret[] = [...$temp];
+        if (count($temp) === count($list)) {
+            $this->ret[] = [...$temp];
+        }
 
         foreach ($list as $num) {
             if (array_key_exists($num, $temp)) {
