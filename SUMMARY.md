@@ -33,6 +33,7 @@
 * [238. Product of Array Except Self](problems/238.-product-of-array-except-self.md)
 * [278. First Bad Version](problems/278.-first-bad-version.md)
 * [279. Perfect Squares](problems/279.-perfect-squares.md)
+* [283. Move Zeroes](problems/283.-move-zeroes.md)
 * [334. Increasing Triplet Subsequence](problems/334.-increasing-triplet-subsequence.md)
 * [345. Reverse Vowels of a String](problems/345.-reverse-vowels-of-a-string.md)
 * [392. Is Subsequence](problems/392.-is-subsequence.md)
