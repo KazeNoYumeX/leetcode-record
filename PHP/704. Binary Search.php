@@ -1,13 +1,15 @@
 <?php
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     /**
-     * @param Integer[] $nums
-     * @param Integer $target
-     * @return Integer
+     * @param  int[]  $nums
      */
-    function search(array $nums, int $target): int
+    public function search(array $nums, int $target): int
     {
         $lo = 0;
         $hi = count($nums) - 1;
@@ -20,6 +22,7 @@ class Solution
                 $lo = $mid;
             }
         }
+
         return $nums[$lo] == $target ? $lo : -1;
     }
 }

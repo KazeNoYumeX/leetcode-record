@@ -1,14 +1,14 @@
 <?php
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     public array $exist = [];
 
-    /**
-     * @param int $num
-     * @return Integer
-     */
-    function helper(int $num): int
+    public function helper(int $num): int
     {
         if (array_key_exists($num, $this->exist)) {
             return $this->exist[$num];
@@ -20,14 +20,11 @@ class Solution
         if ($num === 1) {
             return 1;
         }
+
         return $this->exist[$num] = $this->helper($num - 1) + $this->helper($num - 2);
     }
 
-    /**
-     * @param Integer $n
-     * @return Integer
-     */
-    function fib(int $n): int
+    public function fib(int $n): int
     {
         return $this->helper($n);
     }

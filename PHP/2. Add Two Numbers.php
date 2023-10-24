@@ -1,6 +1,10 @@
 <?php
 
-/** @noinspection PhpMultipleClassDeclarationsInspection */
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ *  @noinspection PhpMultipleClassesDeclarationsInOneFile
+ */
 class ListNode
 {
     public $val = 0;

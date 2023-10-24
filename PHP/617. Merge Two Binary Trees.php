@@ -16,6 +16,10 @@ class TreeNode
     }
 }
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     public function mergeTrees(?TreeNode $root1, ?TreeNode $root2): TreeNode

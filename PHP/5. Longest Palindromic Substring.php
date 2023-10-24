@@ -1,9 +1,15 @@
 <?php
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     private string $longest;
+
     private string $str;
+
     private int $len;
 
     public function __construct()
@@ -13,10 +19,7 @@ class Solution
         $this->len = 0;
     }
 
-
     /**
-     * @param int $str1
-     * @param int $str2
      * @return void
      */
     public function expand(int $str1, int $str2)
@@ -31,10 +34,6 @@ class Solution
         }
     }
 
-    /**
-     * @param String $s
-     * @return String
-     */
     public function longestPalindrome(string $s): string
     {
         $len = strlen($s);

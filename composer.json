@@ -9,6 +9,11 @@
     "require-dev": {
         "laravel/pint": "^1.13"
     },
+  "autoload": {
+    "psr-4": {
+      "Solutions\\": "PHP/"
+    }
+  },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

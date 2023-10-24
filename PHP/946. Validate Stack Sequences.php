@@ -1,17 +1,18 @@
 <?php
 
-/** @noinspection PhpMultipleClassDeclarationsInspection */
-
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
-
     /**
-     * @param Integer[] $pushed
-     * @param Integer[] $popped
-     * @return Boolean
+     * @param  int[]  $pushed
+     * @param  int[]  $popped
+     *
      * @noinspection PhpUnused
      */
-    function validateStackSequences(array $pushed, array $popped): bool
+    public function validateStackSequences(array $pushed, array $popped): bool
     {
         $stack = [];
         $num = 0;
@@ -23,6 +24,7 @@ class Solution
                 $num++;
             }
         }
+
         return $num === count($popped);
     }
 }

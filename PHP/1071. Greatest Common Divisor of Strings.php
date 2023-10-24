@@ -1,6 +1,9 @@
 <?php
 
-/** @noinspection PhpMultipleClassDeclarationsInspection */
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     public function gcd(int $a, int $b): int

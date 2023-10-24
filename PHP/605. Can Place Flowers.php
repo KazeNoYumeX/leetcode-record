@@ -1,15 +1,14 @@
 <?php
 
-/** @noinspection PhpMultipleClassDeclarationsInspection */
-
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
-
     /**
-     * @param  Integer[]  $flowerbed
-     * @param  Integer  $n
+     * @param  int[]  $flowerbed
      *
-     * @return Boolean
      * @noinspection PhpUnused
      */
     public function canPlaceFlowers(array $flowerbed, int $n): bool
@@ -34,6 +33,7 @@ class Solution
                 return true;
             }
         }
+
         return false;
     }
 }

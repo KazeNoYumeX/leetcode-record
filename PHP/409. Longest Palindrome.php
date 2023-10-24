@@ -1,5 +1,9 @@
 <?php
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     public function longestPalindrome(string $s): int

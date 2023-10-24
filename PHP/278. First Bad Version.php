@@ -3,6 +3,10 @@
 /* The isBadVersion API is defined in the parent class VersionControl.
       public function isBadVersion($version){} */
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution extends VersionControl
 {
     /**

@@ -1,12 +1,16 @@
 <?php
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     /**
-     * @param Integer $x
-     * @return Boolean
+     * @param  int  $x
+     * @return bool
      */
-    function isPalindrome($x)
+    public function isPalindrome($x)
     {
         return "$x" === strrev("$x");
     }

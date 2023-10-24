@@ -1,14 +1,17 @@
 <?php
-/** @noinspection PhpMultipleClassDeclarationsInspection */
 
+/**
+ *  @noinspection PhpIllegalPsrClassPathInspection
+ *  @noinspection PhpMultipleClassDeclarationsInspection
+ */
 class Solution
 {
     /**
-     * @param Integer[] $nums
-     * @return Integer
+     * @param  int[]  $nums
+     *
      * @noinspection PhpUnused
      */
-    function pivotIndex(array $nums): int
+    public function pivotIndex(array $nums): int
     {
         $left = 0;
         $right = array_sum($nums);
@@ -20,6 +23,7 @@ class Solution
             }
             $left += $current;
         }
+
         return -1;
     }
 }
