@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
  */
 class Solution
 {
@@ -11,19 +11,25 @@ class Solution
      */
     public function isSubsequence(string $s, string $t): bool
     {
-        if (strlen($s) > strlen($t)) {
+        $lengthS = strlen($s);
+        $lengthT = strlen($t);
+
+        if ($lengthS > $lengthT) {
             return false;
         }
 
-        $array = str_split($s);
-        foreach ($array as $str) {
-            if (! str_contains($t, $str)) {
-                return false;
-            }
-
-            $t = substr($t, strpos($t, $str) + 1);
+        if ($lengthS === 0) {
+            return true;
         }
 
-        return true;
+        $subsequence = 0;
+
+        for ($i = 0; $i < $lengthT; $i++) {
+            if ($s[$subsequence] === $t[$i]) {
+                $subsequence++;
+            }
+        }
+
+        return $lengthS === $subsequence;
     }
 }

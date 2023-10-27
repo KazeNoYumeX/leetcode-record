@@ -6,6 +6,24 @@
  * @return {boolean}
  */
 const isSubsequence = (s, t) => {
-    const counter = t.split('').reduce((acc, el) => s[acc] === el ? acc + 1 : acc, 0)
-    return counter === s.length
+  const lengthS = s.length
+  const lengthT = t.length
+
+  if (lengthS > lengthT) {
+    return false
+  }
+
+  if (lengthS === 0) {
+    return true
+  }
+
+  let subsequence = 0
+
+  for (let i = 0; i < lengthT; i++) {
+    if (s[subsequence] === t[i]) {
+      subsequence++
+    }
+  }
+
+  return lengthS === subsequence
 }
