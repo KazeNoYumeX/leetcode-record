@@ -87,4 +87,5 @@
 * [1890. The Latest Login in 2020](problems/1890.-the-latest-login-in-2020.md)
 * [1926. Nearest Exit from Entrance in Maze](problems/1926.-nearest-exit-from-entrance-in-maze.md)
 * [1929. Concatenation of Array](problems/1929.-concatenation-of-array.md)
+* [1934. Confirmation Rate](problems/1934.-confirmation-rate.md)
 * [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
