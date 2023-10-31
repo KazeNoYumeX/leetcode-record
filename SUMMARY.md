@@ -52,6 +52,7 @@
 * [607. Sales Person](problems/607.-sales-person.md)
 * [608. Tree Node](problems/608.-tree-node.md)
 * [617. Merge Two Binary Trees](problems/617.-merge-two-binary-trees.md)
+* [620. Not Boring Movies](problems/620.-not-boring-movies.md)
 * [627. Swap Salary](problems/627.-swap-salary.md)
 * [704. Binary Search](problems/704.-binary-search.md)
 * [724. Find Pivot Index](problems/724.-find-pivot-index.md)
