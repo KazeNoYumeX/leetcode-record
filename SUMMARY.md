@@ -54,6 +54,7 @@
 * [617. Merge Two Binary Trees](problems/617.-merge-two-binary-trees.md)
 * [620. Not Boring Movies](problems/620.-not-boring-movies.md)
 * [627. Swap Salary](problems/627.-swap-salary.md)
+* [643. Maximum Average Subarray I](problems/643.-maximum-average-subarray-i.md)
 * [704. Binary Search](problems/704.-binary-search.md)
 * [724. Find Pivot Index](problems/724.-find-pivot-index.md)
 * [876. Middle of the Linked List](problems/876.-middle-of-the-linked-list.md)
