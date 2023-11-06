@@ -79,6 +79,7 @@
 * [1527. Patients With a Condition](problems/1527.-patients-with-a-condition.md)
 * [1581. Customer Who Visited but Did Not Make Any Transactions](problems/1581.-customer-who-visited-but-did-not-make-any-transactions.md)
 * [1587. Bank Account Summary II](problems/1587.-bank-account-summary-ii.md)
+* [1633. Percentage of Users Attended a Contest](problems/1633.-percentage-of-users-attended-a-contest.md)
 * [1661. Average Time of Process per Machine](problems/1661.-average-time-of-process-per-machine.md)
 * [1667. Fix Names in a Table](problems/1667.-fix-names-in-a-table.md)
 * [1679. Max Number of K-Sum Pairs](problems/1679.-max-number-of-k-sum-pairs.md)
