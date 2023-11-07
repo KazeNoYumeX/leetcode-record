@@ -59,6 +59,7 @@
 * [724. Find Pivot Index](problems/724.-find-pivot-index.md)
 * [876. Middle of the Linked List](problems/876.-middle-of-the-linked-list.md)
 * [946. Validate Stack Sequences](problems/946.-validate-stack-sequences.md)
+* [1004. Max Consecutive Ones III](problems/1004.-max-consecutive-ones-iii.md)
 * [1050. Actors and Directors Who Cooperated At Least Three Times](problems/1050.-actors-and-directors-who-cooperated-at-least-three-times.md)
 * [1068. Product Sales Analysis I](problems/1068.-product-sales-analysis-i.md)
 * [1071. Greatest Common Divisor of Strings](problems/1071.-greatest-common-divisor-of-strings.md)
