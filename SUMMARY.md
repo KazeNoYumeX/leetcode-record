@@ -68,6 +68,7 @@
 * [1141. User Activity for the Past 30 Days I](problems/1141.-user-activity-for-the-past-30-days-i.md)
 * [1148. Article Views I](problems/1148.-article-views-i.md)
 * [1158. Market Analysis I](problems/1158.-market-analysis-i.md)
+* [1174. Immediate Food Delivery II](problems/1174.-immediate-food-delivery-ii.md)
 * [1193. Monthly Transactions I](problems/1193.-monthly-transactions-i.md)
 * [1251. Average Selling Price](problems/1251.-average-selling-price.md)
 * [1280. Students and Examinations](problems/1280.-students-and-examinations.md)
