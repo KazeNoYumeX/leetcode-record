@@ -42,6 +42,7 @@
 * [443. String Compression](problems/443.-string-compression.md)
 * [509. Fibonacci Number](problems/509.-fibonacci-number.md)
 * [511. Game Play Analysis I](problems/511.-game-play-analysis-i.md)
+* [550. Game Play Analysis IV](problems/550.-game-play-analysis-iv.md)
 * [570. Managers with at Least 5 Direct Reports](problems/570.-managers-with-at-least-5-direct-reports.md)
 * [577. Employee Bonus](problems/577.-employee-bonus.md)
 * [584. Find Customer Referee](problems/584.-find-customer-referee.md)
