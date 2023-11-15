@@ -104,3 +104,4 @@
 * [1929. Concatenation of Array](problems/1929.-concatenation-of-array.md)
 * [1934. Confirmation Rate](problems/1934.-confirmation-rate.md)
 * [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
+* [2215. Find the Difference of Two Arrays](problems/2215.-find-the-difference-of-two-arrays.md)
