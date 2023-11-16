@@ -105,3 +105,4 @@
 * [1934. Confirmation Rate](problems/1934.-confirmation-rate.md)
 * [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
 * [2215. Find the Difference of Two Arrays](problems/2215.-find-the-difference-of-two-arrays.md)
+* [2356. Number of Unique Subjects Taught by Each Teacher](problems/2356.-number-of-unique-subjects-taught-by-each-teacher.md)
