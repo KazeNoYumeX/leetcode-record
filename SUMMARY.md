@@ -63,6 +63,7 @@
 * [1004. Max Consecutive Ones III](problems/1004.-max-consecutive-ones-iii.md)
 * [1050. Actors and Directors Who Cooperated At Least Three Times](problems/1050.-actors-and-directors-who-cooperated-at-least-three-times.md)
 * [1068. Product Sales Analysis I](problems/1068.-product-sales-analysis-i.md)
+* [1070. Product Sales Analysis III](problems/1070.-product-sales-analysis-iii.md)
 * [1071. Greatest Common Divisor of Strings](problems/1071.-greatest-common-divisor-of-strings.md)
 * [1075. Project Employees I](problems/1075.-project-employees-i.md)
 * [1084. Sales Analysis III](problems/1084.-sales-analysis-iii.md)
