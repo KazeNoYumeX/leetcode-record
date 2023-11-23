@@ -49,6 +49,7 @@
 * [586. Customer Placing the Largest Number of Orders](problems/586.-customer-placing-the-largest-number-of-orders.md)
 * [589. N-ary Tree Preorder Traversal](problems/589.-n-ary-tree-preorder-traversal.md)
 * [595. Big Countries](problems/595.-big-countries.md)
+* [596. Classes More Than 5 Students](problems/596.-classes-more-than-5-students.md)
 * [605. Can Place Flowers](problems/605.-can-place-flowers.md)
 * [607. Sales Person](problems/607.-sales-person.md)
 * [608. Tree Node](problems/608.-tree-node.md)
