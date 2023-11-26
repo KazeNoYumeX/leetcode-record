@@ -54,6 +54,7 @@
 * [607. Sales Person](problems/607.-sales-person.md)
 * [608. Tree Node](problems/608.-tree-node.md)
 * [617. Merge Two Binary Trees](problems/617.-merge-two-binary-trees.md)
+* [619. Biggest Single Number](problems/619.-biggest-single-number.md)
 * [620. Not Boring Movies](problems/620.-not-boring-movies.md)
 * [627. Swap Salary](problems/627.-swap-salary.md)
 * [643. Maximum Average Subarray I](problems/643.-maximum-average-subarray-i.md)
