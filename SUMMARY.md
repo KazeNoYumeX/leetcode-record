@@ -63,6 +63,7 @@
 * [876. Middle of the Linked List](problems/876.-middle-of-the-linked-list.md)
 * [946. Validate Stack Sequences](problems/946.-validate-stack-sequences.md)
 * [1004. Max Consecutive Ones III](problems/1004.-max-consecutive-ones-iii.md)
+* [1045. Customers Who Bought All Products](problems/1045.-customers-who-bought-all-products.md)
 * [1050. Actors and Directors Who Cooperated At Least Three Times](problems/1050.-actors-and-directors-who-cooperated-at-least-three-times.md)
 * [1068. Product Sales Analysis I](problems/1068.-product-sales-analysis-i.md)
 * [1070. Product Sales Analysis III](problems/1070.-product-sales-analysis-iii.md)
