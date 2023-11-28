@@ -60,6 +60,7 @@
 * [643. Maximum Average Subarray I](problems/643.-maximum-average-subarray-i.md)
 * [704. Binary Search](problems/704.-binary-search.md)
 * [724. Find Pivot Index](problems/724.-find-pivot-index.md)
+* [735. Asteroid Collision](problems/735.-asteroid-collision.md)
 * [876. Middle of the Linked List](problems/876.-middle-of-the-linked-list.md)
 * [946. Validate Stack Sequences](problems/946.-validate-stack-sequences.md)
 * [1004. Max Consecutive Ones III](problems/1004.-max-consecutive-ones-iii.md)
