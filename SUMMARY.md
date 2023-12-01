@@ -53,6 +53,7 @@
 * [605. Can Place Flowers](problems/605.-can-place-flowers.md)
 * [607. Sales Person](problems/607.-sales-person.md)
 * [608. Tree Node](problems/608.-tree-node.md)
+* [610. Triangle Judgement](problems/610.-triangle-judgement.md)
 * [617. Merge Two Binary Trees](problems/617.-merge-two-binary-trees.md)
 * [619. Biggest Single Number](problems/619.-biggest-single-number.md)
 * [620. Not Boring Movies](problems/620.-not-boring-movies.md)
