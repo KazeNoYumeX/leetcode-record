@@ -24,6 +24,7 @@
 * [151. Reverse Words in a String](problems/151.-reverse-words-in-a-string.md)
 * [175. Combine Two Tables](problems/175.-combine-two-tables.md)
 * [176. Second Highest Salary](problems/176.-second-highest-salary.md)
+* [180. Consecutive Numbers](problems/180.-consecutive-numbers.md)
 * [181. Employees Earning More Than Their Managers](problems/181.-employees-earning-more-than-their-managers.md)
 * [182. Duplicate Emails](problems/182.-duplicate-emails.md)
 * [183. Customers Who Never Order](problems/183.-customers-who-never-order.md)
