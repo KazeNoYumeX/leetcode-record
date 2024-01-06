@@ -2,6 +2,10 @@
 
 *.md diff=markdown
 *.php diff=php
+*.go diff=go
+*.ts diff=typescript
+*.py diff=python
+*.sql diff=sql
 
 /.github export-ignore
 CHANGELOG.md export-ignore
@@ -16,6 +20,10 @@ CHANGELOG.md export-ignore
 *.txt   text eol=lf
 *.xml   text eol=lf
 *.yml   text eol=lf
+*.go    text eol=lf
+*.ts    text eol=lf
+*.py    text eol=lf
+*.sql   text eol=lf
 
 # Don't diff or textually merge source maps
 *.map   binary
