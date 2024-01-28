@@ -1,5 +1,7 @@
 <?php
 
+namespace Solutions;
+
 /**
  *  @noinspection PhpIllegalPsrClassPathInspection
  *  @noinspection PhpMultipleClassDeclarationsInspection
