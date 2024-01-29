@@ -1,10 +1,14 @@
-/.idea/
-/venv
+.idea/
+.vscode/
 
-# Just to maintain the pure theme of the project
-/node_modules
+# Python venv
+.venv/
+venv/
+
+# TypeScript NPM
+node_modules/
 package-lock.json
 
-# Composer
-/vendor
+# PHP Composer
+vendor/
 composer.lock
