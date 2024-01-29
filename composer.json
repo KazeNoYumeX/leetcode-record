@@ -4,7 +4,7 @@
     "description": "LeetCode solutions using PHP, TypeScript, Python, and Go.",
     "license": "MIT",
     "require": {
-        "php": "^8.1|^8.2"
+        "php": "^8.2"
     },
     "require-dev": {
         "laravel/pint": "^1.13"
