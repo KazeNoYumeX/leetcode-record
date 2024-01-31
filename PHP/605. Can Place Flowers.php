@@ -1,8 +1,7 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
  */
 class Solution
 {
@@ -19,6 +18,7 @@ class Solution
 
         $length = count($flowerbed);
         $i = 0;
+
         while ($i < $length) {
             if ($flowerbed[$i] == 1) {
                 $i += 2;

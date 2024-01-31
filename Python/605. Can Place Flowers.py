@@ -1,8 +1,8 @@
 from typing import List
 
 
+# noinspection PyMethodMayBeStatic
 class Solution:
-    # noinspection PyMethodMayBeStatic
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         if n == 0:
             return True
