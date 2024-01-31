@@ -1,8 +1,7 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
  */
 class Solution
 {

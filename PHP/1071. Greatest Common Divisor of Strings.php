@@ -1,10 +1,7 @@
 <?php
 
-namespace Solutions;
-
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
  */
 class Solution
 {

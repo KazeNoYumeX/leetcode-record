@@ -1,9 +1,7 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
- *  @noinspection PhpMultipleClassesDeclarationsInOneFile
+ *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection, PhpMultipleClassesDeclarationsInOneFile
  */
 class ListNode
 {

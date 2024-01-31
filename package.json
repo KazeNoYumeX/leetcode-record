@@ -1,4 +1,10 @@
 {
+  "name": "leetcode-record",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint --ext .ts,.js ."
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
@@ -6,25 +12,7 @@
     "eslint-plugin-typescript": "^0.14.0",
     "typescript": "^5.3.3"
   },
-  "name": "leetcode-record",
-  "description": "--- Description: TypeScript, PHP, Python, JavaScript, MySQL Solutions for LeetCode ---",
-  "version": "1.0.0",
-  "main": "index.js",
   "dependencies": {
-    "undici-types": "^6.5.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --ext .ts,.js ."
-  },
-  "keywords": [
-    "leetcode",
-    "typescript",
-    "php",
-    "python",
-    "go",
-    "mysql"
-  ],
-  "author": "KazeNoYumeX",
-  "license": "MIT"
+    "undici-types": "^6.6.0"
+  }
 }
