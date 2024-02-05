@@ -1,5 +1,5 @@
+# noinspection PyMethodMayBeStatic
 class Solution:
-    # noinspection PyMethodMayBeStatic
     def reverseVowels(self, s: str) -> str:
         length = len(s)
 

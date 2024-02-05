@@ -12,8 +12,8 @@ func reverseVowels(s string) string {
 
 	vowels := map[rune]struct{}{
 		'a': {}, 'e': {}, 'i': {}, 'o': {}, 'u': {},
-		'A': {}, 'E': {}, 'I': {}, 'O': {}, 'U': {},
 	}
+
 	slice := []rune(s)
 	left := 0
 	right := length - 1

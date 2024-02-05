@@ -19,6 +19,7 @@ class Solution
         $vowels = [
             'a' => true, 'e' => true, 'i' => true, 'o' => true, 'u' => true,
         ];
+
         $left = 0;
         $right = $length - 1;
 
