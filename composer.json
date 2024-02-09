@@ -1,24 +1,24 @@
 {
-    "name": "kazenoyumex/leetcode-record",
-    "type": "project",
-    "description": "LeetCode solutions using PHP, TypeScript, Python, and Go.",
-    "license": "MIT",
-    "require": {
-        "php": "^8.2"
-    },
-    "require-dev": {
-        "laravel/pint": "^1.13"
-    },
+  "name": "kazenoyumex/leetcode-record",
+  "type": "project",
+  "description": "LeetCode solutions using PHP, TypeScript, Python, and Go.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.13"
+  },
   "autoload": {
     "psr-4": {
       "Solutions\\": "PHP/"
     }
   },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
