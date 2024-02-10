@@ -13,17 +13,17 @@ class Solution
      */
     public function productExceptSelf(array $nums): array
     {
-        $numCount = count($nums);
-        $result = array_fill(0, $numCount, 1);
+        $length = count($nums);
+        $result = array_fill(0, $length, 1);
 
         $num = 1;
-        for ($i = $numCount - 1; $i >= 0; $i--) {
+        for ($i = $length - 1; $i >= 0; $i--) {
             $result[$i] = $num;
             $num *= $nums[$i];
         }
 
         $num = 1;
-        for ($i = 0; $i < $numCount; $i++) {
+        for ($i = 0; $i < $length; $i++) {
             $result[$i] *= $num;
             $num *= $nums[$i];
         }

@@ -1,8 +1,8 @@
 from typing import List
 
 
+# noinspection PyMethodMayBeStatic
 class Solution:
-    # noinspection PyMethodMayBeStatic
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         count = len(nums)
         result = [1] * count
