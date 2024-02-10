@@ -10,15 +10,9 @@
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
     "eslint-plugin-typescript": "^0.14.0",
-    "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   },
   "dependencies": {
     "undici-types": "^6.6.2"
-  },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all"
   }
 }
