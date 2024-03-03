@@ -1,7 +1,7 @@
 from typing import List
 
 
-# noinspection PyMethodMayBeStatic
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         if n == 0:
