@@ -1,5 +1,10 @@
 // noinspection JSUnusedGlobalSymbols
-const reverseWords = (s: string) =>
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+const reverseWords = (s) =>
   s
     .trim()
     .split(' ')
