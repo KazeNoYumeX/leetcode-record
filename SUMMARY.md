@@ -24,6 +24,7 @@
 * [141. Linked List Cycle](problems/141.-linked-list-cycle.md)
 * [142. Linked List Cycle II](problems/142.-linked-list-cycle-ii.md)
 * [151. Reverse Words in a String](problems/151.-reverse-words-in-a-string.md)
+* [169. Majority Element](problems/169.-majority-element.md)
 * [175. Combine Two Tables](problems/175.-combine-two-tables.md)
 * [176. Second Highest Salary](problems/176.-second-highest-salary.md)
 * [180. Consecutive Numbers](problems/180.-consecutive-numbers.md)
