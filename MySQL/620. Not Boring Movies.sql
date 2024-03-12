@@ -24,7 +24,6 @@ values ('4', 'Ice song', 'Fantasy', '8.6');
 insert into cinema (id, movie, description, rating)
 values ('5', 'House card', 'Interesting', '9.1');
 
-
 # Solution
 select id, movie, description, rating
 from cinema
