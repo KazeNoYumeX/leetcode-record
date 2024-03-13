@@ -7,11 +7,19 @@ class Solution
 {
     /**
      * @param  int[]  $nums
+     *
+     * @noinspection PhpUnused
      */
     public function removeDuplicates(array &$nums): int
     {
-        $nums = array_flip(array_flip($nums));
+        $left = 0;
 
-        return count($nums);
+        for ($right = 1; $right < count($nums); $right++) {
+            if ($nums[$left] !== $nums[$right]) {
+                $nums[++$left] = $nums[$right];
+            }
+        }
+
+        return $left + 1;
     }
 }
