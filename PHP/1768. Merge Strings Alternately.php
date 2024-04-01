@@ -6,7 +6,8 @@
 class Solution
 {
     /**
-     * @noinspection PhpUnused*/
+     * @noinspection PhpUnused
+     */
     public function mergeAlternately(string $word1, string $word2): string
     {
         $result = '';

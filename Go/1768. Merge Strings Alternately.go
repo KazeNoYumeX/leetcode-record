@@ -1,22 +1,19 @@
 package main
 
 //goland:noinspection GoUnusedFunction
-
 func mergeAlternately(word1 string, word2 string) string {
-	var result []rune
-	var i, j int
+	var result []byte
 
-	for i < len(word1) || j < len(word2) {
+	length := max(len(word1), len(word2))
+
+	for i := 0; i < length; i++ {
 		if i < len(word1) {
-			result = append(result, rune(word1[i]))
-			i++
+			result = append(result, word1[i])
 		}
 
-		if j < len(word2) {
-			result = append(result, rune(word2[j]))
-			j++
+		if i < len(word2) {
+			result = append(result, word2[i])
 		}
 	}
-
 	return string(result)
 }
