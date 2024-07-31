@@ -1,5 +1,10 @@
 // noinspection JSUnusedGlobalSymbols
-const mergeAlternately = (word1: string, word2: string): string => {
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {string}
+ */
+const mergeAlternately = (word1, word2) => {
   const length = Math.max(word1.length, word2.length)
   let result = ''
 
