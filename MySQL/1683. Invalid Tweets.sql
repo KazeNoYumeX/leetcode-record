@@ -8,10 +8,10 @@ Create table If Not Exists Tweets
 Truncate table Tweets;
 
 insert into Tweets (tweet_id, content)
-values ('1', 'Vote for Biden');
+values ('1', 'Let us Code');
 
 insert into Tweets (tweet_id, content)
-values ('2', 'Let us make America great again!');
+values ('2', 'More than fifteen chars are here!');
 
 # Solution
 select tweet_id
