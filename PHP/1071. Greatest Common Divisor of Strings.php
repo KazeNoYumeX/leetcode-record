@@ -5,12 +5,6 @@
  */
 class Solution
 {
-    public function gcd(int $a, int $b): int
-    {
-        // Euclidean Algorithm
-        return $b === 0 ? $a : $this->gcd($b, $a % $b);
-    }
-
     /** @noinspection PhpUnused */
     public function gcdOfStrings(string $str1, string $str2): string
     {
@@ -19,5 +13,11 @@ class Solution
         }
 
         return substr($str1, 0, $this->gcd(strlen($str1), strlen($str2)));
+    }
+
+    /** Euclidean Algorithm */
+    public function gcd(int $a, int $b): int
+    {
+        return $b === 0 ? $a : $this->gcd($b, $a % $b);
     }
 }
