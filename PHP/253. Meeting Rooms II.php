@@ -14,7 +14,7 @@ class Solution
     {
         sort($intervals);
 
-        $heap = new SplMinHeap();
+        $heap = new SplMinHeap;
         $heap->insert($intervals[0][1]);
 
         for ($i = 1; $i < count($intervals); $i++) {
