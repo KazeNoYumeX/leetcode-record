@@ -16,7 +16,7 @@ Create table If Not Exists Bonus
 Truncate table Employee;
 
 insert into Employee (empId, name, supervisor, salary)
-values ('3', 'Brad', 'None', '4000');
+values ('3', 'Brad', NULL, '4000');
 
 insert into Employee (empId, name, supervisor, salary)
 values ('1', 'John', '3', '1000');
