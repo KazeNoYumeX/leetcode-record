@@ -1,5 +1,9 @@
 // noinspection JSUnusedGlobalSymbols
-const mergeIntervals = (intervals: number[][]): number[][] => {
+/**
+ * @param {number[][]} intervals
+ * @return {number[][]}
+ */
+const mergeIntervals = (intervals) => {
   const length = intervals.length
 
   if (length <= 1) {
@@ -9,7 +13,7 @@ const mergeIntervals = (intervals: number[][]): number[][] => {
   intervals.sort((a, b) => a[0] - b[0])
 
   let interval = intervals[0]
-  const mergedIntervals: number[][] = []
+  const mergedIntervals = []
 
   for (let i = 1; i < length; i++) {
     if (interval[1] >= intervals[i][0]) {
