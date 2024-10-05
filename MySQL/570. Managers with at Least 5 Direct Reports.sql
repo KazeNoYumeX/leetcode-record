@@ -10,7 +10,7 @@ Create table If Not Exists Employee
 Truncate table Employee;
 
 insert into Employee (id, name, department, managerId)
-values ('101', 'John', 'A', 'None');
+values ('101', 'John', 'A', NULL);
 
 insert into Employee (id, name, department, managerId)
 values ('102', 'Dan', 'A', '101');
@@ -28,8 +28,8 @@ insert into Employee (id, name, department, managerId)
 values ('106', 'Ron', 'B', '101');
 
 # Solution
-select e1.name
+select e2.name
 from Employee as e1
-         inner join Employee as e2 on e1.id = e2.managerId
-group by e2.managerId
-having count(e2.managerId) >= 5;
+         left join Employee as e2 on e1.managerId = e2.id
+group by e2.id, e2.name
+having count(e2.id) >= 5;
