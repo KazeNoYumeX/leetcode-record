@@ -25,7 +25,7 @@ insert into cinema (id, movie, description, rating)
 values ('5', 'House card', 'Interesting', '9.1');
 
 # Solution
-select id, movie, description, rating
+select *
 from cinema
 where description <> 'boring'
   and id % 2 = 1
