@@ -1,14 +1,21 @@
 .idea/
 .vscode/
 
-# Python venv
+# macOS
+.DS_Store
+
+# Python
 .venv/
 venv/
 
-# TypeScript NPM
+# TypeScript
 node_modules/
 package-lock.json
 
-# PHP Composer
+# PHP
 vendor/
 composer.lock
+
+# C#
+bin/
+obj/

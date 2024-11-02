@@ -7,7 +7,7 @@ services:
       MYSQL_DATABASE: leetcode
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - "3306:3306"
+      - '3306:3306'
     volumes:
       - mysql:/var/lib/mysql
 
