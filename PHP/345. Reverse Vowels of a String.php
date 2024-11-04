@@ -18,6 +18,7 @@ class Solution
 
         $vowels = [
             'a' => true, 'e' => true, 'i' => true, 'o' => true, 'u' => true,
+            'A' => true, 'E' => true, 'I' => true, 'O' => true, 'U' => true,
         ];
 
         $left = 0;
@@ -28,9 +29,9 @@ class Solution
                 break;
             }
 
-            if (array_key_exists(strtolower($s[$left]), $vowels)) {
+            if (array_key_exists($s[$left], $vowels)) {
                 while ($right > $left) {
-                    if (array_key_exists(strtolower($s[$right]), $vowels)) {
+                    if (array_key_exists($s[$right], $vowels)) {
                         [$s[$left], $s[$right]] = [$s[$right], $s[$left]];
                         $right--;
                         break;

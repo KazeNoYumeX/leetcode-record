@@ -23,9 +23,9 @@ func reverseVowels(s string) string {
 			break
 		}
 
-		if _, isVowel := vowels[unicode.ToLower(slice[left])]; isVowel {
+		if _, exists := vowels[unicode.ToLower(slice[left])]; exists {
 			for right > left {
-				if _, isVowel := vowels[unicode.ToLower(slice[right])]; isVowel {
+				if _, exists := vowels[unicode.ToLower(slice[right])]; exists {
 					slice[left], slice[right] = slice[right], slice[left]
 					right--
 					break
