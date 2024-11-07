@@ -2,10 +2,9 @@ package main
 
 //goland:noinspection GoUnusedFunction
 func insert(intervals [][]int, newInterval []int) [][]int {
-	length := len(intervals)
-	result := make([][]int, length)
+	result := make([][]int, 0)
 
-	for i := 0; i < length; i++ {
+	for i := 0; i < len(intervals); i++ {
 		current := intervals[i]
 
 		if newInterval == nil || current[1] < newInterval[0] {
