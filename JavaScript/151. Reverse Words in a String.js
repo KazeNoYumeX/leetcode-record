@@ -6,8 +6,7 @@
  */
 const reverseWords = (s) =>
   s
-    .trim()
     .split(' ')
-    .filter((char) => char.length > 0)
+    .filter((char) => char !== '')
     .reverse()
     .join(' ')
