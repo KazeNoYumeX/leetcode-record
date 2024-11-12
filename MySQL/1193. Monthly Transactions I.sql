@@ -25,7 +25,7 @@ values ('124', 'DE', 'approved', '2000', '2019-01-07');
 # Solution
 select date_format(trans_date, '%Y-%m')       as month,
        country,
-       count(state)                           as trans_count,
+       count(id)                              as trans_count,
        sum(state = 'approved')                as approved_count,
        sum(if(amount, amount, 0))             as trans_total_amount,
        sum(if(state = 'approved', amount, 0)) as approved_total_amount
