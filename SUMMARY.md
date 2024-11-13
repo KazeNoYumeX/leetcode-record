@@ -88,6 +88,7 @@
 - [1207. Unique Number of Occurrences](problems/1207.-unique-number-of-occurrences.md)
 - [1251. Average Selling Price](problems/1251.-average-selling-price.md)
 - [1280. Students and Examinations](problems/1280.-students-and-examinations.md)
+- [1288. Remove Covered Intervals](problems/1288.-remove-covered-intervals.md)
 - [1211. Queries Quality and Percentage](problems/1211.-queries-quality-and-percentage.md)
 - [1378. Replace Employee ID With The Unique Identifier](problems/1378.-replace-employee-id-with-the-unique-identifier.md)
 - [1393. Capital Gain/Loss](problems/1393.-capital-gain-loss.md)
