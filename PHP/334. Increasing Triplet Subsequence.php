@@ -11,19 +11,17 @@ class Solution
      * @noinspection PhpUnused*/
     public function increasingTriplet(array $nums): bool
     {
-        $length = count($nums);
-
-        if ($length < 3) {
+        if (count($nums) < 3) {
             return false;
         }
 
         $first = $second = PHP_INT_MAX;
 
-        for ($i = 0; $i < $length; $i++) {
-            if ($nums[$i] <= $first) {
-                $first = $nums[$i];
-            } elseif ($nums[$i] <= $second) {
-                $second = $nums[$i];
+        foreach ($nums as $num) {
+            if ($num <= $first) {
+                $first = $num;
+            } elseif ($num <= $second) {
+                $second = $num;
             } else {
                 return true;
             }
