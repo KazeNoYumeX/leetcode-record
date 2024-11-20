@@ -1,5 +1,9 @@
 // noinspection JSUnusedGlobalSymbols
-const majorityElement = (nums: number[]): number => {
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+const majorityElement = (nums) => {
   let count = 1
   let majority = nums[0]
 
