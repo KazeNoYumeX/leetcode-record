@@ -1,5 +1,9 @@
 // noinspection JSUnusedGlobalSymbols
-const compress = (chars: string[]): number => {
+/**
+ * @param {string[]} chars
+ * @return {number}
+ */
+const compress = (chars) => {
   const length = chars.length
   let index = 0
 
