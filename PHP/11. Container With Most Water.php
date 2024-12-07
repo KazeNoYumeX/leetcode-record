@@ -13,18 +13,22 @@ class Solution
      */
     public function maxArea(array $height): int
     {
-        $left = 0;
-        $right = count($height) - 1;
+        $start = 0;
+        $end = count($height) - 1;
         $max = 0;
+        $highest = max($height);
 
-        while ($left < $right) {
-            $max = max($max,
-                min($height[$left], $height[$right]) * ($right - $left));
+        while ($end * $highest > $max) {
+            $left = $height[$start];
+            $right = $height[$end];
 
-            if ($height[$left] < $height[$right]) {
-                $left++;
+            $min = min($left, $right);
+            $max = max($max, $min * ($end - $start));
+
+            if ($left < $right) {
+                $start++;
             } else {
-                $right--;
+                $end--;
             }
         }
 

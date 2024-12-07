@@ -1,5 +1,9 @@
 // noinspection JSUnusedGlobalSymbols
-const maxArea = (height: number[]): number => {
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+const maxArea = (height) => {
   let start = 0
   let end = height.length - 1
   let max = 0
