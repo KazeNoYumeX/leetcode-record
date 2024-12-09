@@ -1,8 +1,18 @@
+// noinspection JSUnusedGlobalSymbols
 const maxProfit = (prices: number[]): number => {
-    let curr: number = 0, maxSoFar: number = 0
-    for (let i = 1; i < prices.length; i++) {
-        curr = Math.max(0, curr += prices[i] - prices[i - 1]);
-        maxSoFar = Math.max(curr, maxSoFar);
+  let min = Infinity
+  let max = 0
+
+  prices.forEach((price) => {
+    if (price < min) {
+      min = price
     }
-    return maxSoFar
+
+    const profit = price - min
+    if (profit > max) {
+      max = profit
+    }
+  })
+
+  return max
 }

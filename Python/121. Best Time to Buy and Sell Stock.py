@@ -1,14 +1,18 @@
 from typing import List
 
 
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        maxCurr = maxSoFar = 0
+        minimum = float('inf')
+        maximum = 0
 
-        for x in range(len(prices)):
-            if x == 0:
-                continue
-            else:
-                maxCurr = max(0, maxCurr + prices[x] - prices[x - 1])
-                maxSoFar = max(maxCurr, maxSoFar)
-        return maxSoFar
+        for price in prices:
+            if price < minimum:
+                minimum = price
+
+            profit = price - minimum
+            if profit > maximum:
+                maximum = profit
+
+        return maximum
