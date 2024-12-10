@@ -3,13 +3,12 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $nums
-     *
-     * @noinspection PhpUnused
      */
     public function maxOperations(array $nums, int $k): int
     {
