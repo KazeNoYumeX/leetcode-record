@@ -1,13 +1,25 @@
+import math
 from typing import List
 
 
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
-    # noinspection PyMethodMayBeStatic
     def findMaxAverage(self, nums: List[int], k: int) -> float:
-        max_sum = current_sum = sum(nums[:k])
+        left, right = 0, 0
+        average = -math.inf
+        summation = 0
 
-        for i in range(len(nums) - k):
-            current_sum = current_sum - nums[i] + nums[k + i]
-            max_sum = max(max_sum, current_sum)
+        while right < len(nums):
+            window = right - left + 1
 
-        return max_sum/k
+            summation += nums[right]
+
+            if window == k:
+                average = max(summation / k, average)
+
+                summation -= nums[left]
+                left += 1
+
+            right += 1
+
+        return average

@@ -4,22 +4,24 @@ import "math"
 
 //goland:noinspection GoUnusedFunction
 func findMaxAverage(nums []int, k int) float64 {
-	sum := 0
-	maxSum := math.MinInt32
+	left, right := 0, 0
+	average := math.Inf(-1)
+	var sum float64
 
-	for i := 0; i < len(nums); i++ {
-		if i > k-1 {
-			sum -= nums[i-k]
+	for right < len(nums) {
+		window := right - left + 1
+
+		sum += float64(nums[right])
+
+		if window == k {
+			average = max(sum/float64(k), average)
+
+			sum -= float64(nums[left])
+			left++
 		}
 
-		sum += nums[i]
-
-		if i >= k-1 {
-			if sum > maxSum {
-				maxSum = sum
-			}
-		}
+		right++
 	}
 
-	return float64(maxSum) / float64(k)
+	return average
 }

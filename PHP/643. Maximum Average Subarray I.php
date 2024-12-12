@@ -1,34 +1,34 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $nums
-     *
-     * @noinspection PhpUnused
      */
     public function findMaxAverage(array $nums, int $k): float
     {
+        $left = 0;
+        $average = PHP_INT_MIN;
         $sum = 0;
-        $max = PHP_INT_MIN;
 
-        for ($i = 0; $i < count($nums); $i++) {
-            if ($i > $k - 1) {
-                $sum -= $nums[$i - $k];
-            }
+        for ($right = 0; $right < count($nums); $right++) {
+            $window = $right - $left + 1;
 
-            $sum += $nums[$i];
+            $sum += $nums[$right];
 
-            if ($i >= $k - 1) {
-                if ($sum > $max) {
-                    $max = $sum;
-                }
+            if ($window === $k) {
+                $average = max($sum / $k, $average);
+
+                $sum -= $nums[$left];
+                $left++;
             }
         }
 
-        return $max / $k;
+        return $average;
     }
 }
