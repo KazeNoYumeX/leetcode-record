@@ -88,6 +88,7 @@
 - [1164. Product Price at a Given Date](problems/1164.-product-price-at-a-given-date.md)
 - [1174. Immediate Food Delivery II](problems/1174.-immediate-food-delivery-ii.md)
 - [1193. Monthly Transactions I](problems/1193.-monthly-transactions-i.md)
+- [1204. Last Person to Fit in the Bus](problems/1204.-last-person-to-fit-in-the-bus.md)
 - [1207. Unique Number of Occurrences](problems/1207.-unique-number-of-occurrences.md)
 - [1251. Average Selling Price](problems/1251.-average-selling-price.md)
 - [1280. Students and Examinations](problems/1280.-students-and-examinations.md)
