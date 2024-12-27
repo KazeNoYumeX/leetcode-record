@@ -1,14 +1,14 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $gain
-     *
-     * @noinspection PhpUnused
      */
     public function largestAltitude(array $gain): int
     {

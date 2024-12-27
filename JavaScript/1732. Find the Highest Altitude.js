@@ -1,5 +1,9 @@
 // noinspection JSUnusedGlobalSymbols
-const largestAltitude = (gain: number[]): number => {
+/**
+ * @param {number[]} gain
+ * @return {number}
+ */
+const largestAltitude = (gain) => {
   let max = 0
   let current = 0
 
