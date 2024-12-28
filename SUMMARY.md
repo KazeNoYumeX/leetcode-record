@@ -16,6 +16,7 @@
 - [26. Remove Duplicates from Sorted Array](problems/26.-remove-duplicates-from-sorted-array.md)
 - [27. Remove Element](problems/27.-remove-element.md)
 - [46. Permutations](problems/46.-permutations.md)
+- [55. Jump Game](problems/55.-jump-game.md)
 - [56. Merge Intervals](problems/56.-merge-intervals.md)
 - [57. Insert Interval](problems/57.-insert-interval.md)
 - [80. Remove Duplicates from Sorted Array II](problems/80.-remove-duplicates-from-sorted-array-ii.md)
