@@ -1,5 +1,10 @@
 // noinspection JSUnusedGlobalSymbols
-const findMaxAverage = (nums: number[], k: number): number => {
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number}
+ */
+const findMaxAverage = (nums, k) => {
   let left = 0
   let right = 0
   let average = -Infinity
@@ -10,7 +15,7 @@ const findMaxAverage = (nums: number[], k: number): number => {
 
     sum += nums[right]
 
-    if (window == k) {
+    if (window === k) {
       average = Math.max(sum / k, average)
 
       sum -= nums[left]
