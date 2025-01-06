@@ -15,11 +15,7 @@ public partial class Solution
             return s;
         }
 
-        HashSet<char> vowels = new HashSet<char>
-        {
-            'a', 'e', 'i', 'o', 'u',
-            'A', 'E', 'I', 'O', 'U'
-        };
+        HashSet<char> vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
         char[] slice = s.ToCharArray();
 
