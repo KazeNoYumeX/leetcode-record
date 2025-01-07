@@ -1,13 +1,12 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function mergeAlternately(string $word1, string $word2): string
     {
         $result = '';
