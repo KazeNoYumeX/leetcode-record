@@ -1,11 +1,12 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /** @noinspection PhpUnused */
     public function gcdOfStrings(string $str1, string $str2): string
     {
         if ($str1.$str2 !== $str2.$str1) {
