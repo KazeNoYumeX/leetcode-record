@@ -25,9 +25,9 @@ values ('2', 'Winston', null, '37');
 select managers.employee_id,
        managers.name,
        count(managers.employee_id) as reports_count,
-       round(avg(employees.age))   as average_age
-from employees managers
-         left join employees on managers.employee_id = employees.reports_to
-where employees.reports_to is not null
+       round(avg(Employees.age))   as average_age
+from Employees managers
+         left join Employees on managers.employee_id = Employees.reports_to
+where Employees.reports_to is not null
 group by managers.employee_id, managers.name
 order by managers.employee_id;
