@@ -1,15 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $candies
      * @return bool[]
-     *
-     * @noinspection PhpUnused
      */
     public function kidsWithCandies(array $candies, int $extraCandies): array
     {
