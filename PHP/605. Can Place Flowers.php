@@ -1,14 +1,14 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $flowerbed
-     *
-     * @noinspection PhpUnused
      */
     public function canPlaceFlowers(array $flowerbed, int $n): bool
     {
