@@ -1,13 +1,12 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function reverseWords(string $s): string
     {
         $arr = array_diff(explode(' ', trim($s)), ['']);
