@@ -1,14 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $nums
-     *
-     * @noinspection PhpUnused*/
+     */
     public function increasingTriplet(array $nums): bool
     {
         if (count($nums) < 3) {
