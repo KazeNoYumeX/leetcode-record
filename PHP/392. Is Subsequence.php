@@ -3,12 +3,10 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function isSubsequence(string $s, string $t): bool
     {
         $lengthS = strlen($s);
