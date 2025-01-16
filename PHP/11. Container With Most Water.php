@@ -3,13 +3,12 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $height
-     *
-     * @noinspection PhpUnused
      */
     public function maxArea(array $height): int
     {
