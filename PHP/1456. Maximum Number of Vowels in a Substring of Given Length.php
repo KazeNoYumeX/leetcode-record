@@ -1,13 +1,12 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function maxVowels(string $s, int $k): int
     {
         $max = 0;
@@ -21,18 +20,18 @@ class Solution
             }
         }
 
-        $secondVowels = $max;
+        $current = $max;
         for ($i = $k; $i < strlen($s); $i++) {
             if (array_key_exists($s[$i - $k], $vowels)) {
-                $secondVowels--;
+                $current--;
             }
 
             if (array_key_exists($s[$i], $vowels)) {
-                $secondVowels++;
+                $current++;
             }
 
-            if ($secondVowels > $max) {
-                $max = $secondVowels;
+            if ($current > $max) {
+                $max = $current;
             }
         }
 

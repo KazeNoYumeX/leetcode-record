@@ -1,34 +1,29 @@
 // noinspection JSUnusedGlobalSymbols
-const maxVowels = (s: string, k: number): number =>{
-    let max = 0
-    const vowels: { [key: string]: boolean } = {
-        a: true,
-        e: true,
-        i: true,
-        o: true,
-        u: true,
+const maxVowels = (s: string, k: number): number => {
+  let max = 0
+
+  for (let i = 0; i < k; i++) {
+    if (vowelCheck(s[i])) {
+      max++
+    }
+  }
+
+  let current = max
+  for (let i = k; i < s.length; i++) {
+    if (vowelCheck(s[i - k])) {
+      current--
     }
 
-    for (let i = 0; i < k; i++) {
-        if (vowels[s[i]]) {
-            max++
-        }
+    if (vowelCheck(s[i])) {
+      current++
     }
 
-    let secondVowels = max
-    for (let i = k; i < s.length; i++) {
-        if (vowels[s[i - k]]) {
-            secondVowels--
-        }
-
-        if (vowels[s[i]]) {
-            secondVowels++
-        }
-
-        if (secondVowels > max) {
-            max = secondVowels
-        }
+    if (current > max) {
+      max = current
     }
+  }
 
-    return max
+  return max
 }
+
+const vowelCheck = (char: string): boolean => char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u'

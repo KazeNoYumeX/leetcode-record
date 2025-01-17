@@ -2,32 +2,32 @@ package main
 
 //goland:noinspection GoUnusedFunction
 func maxVowels(s string, k int) int {
-	maxVowelCount := 0
+	maxVowel := 0
 	vowels := map[byte]bool{
 		'a': true, 'e': true, 'i': true, 'o': true, 'u': true,
 	}
 
 	for i := 0; i < k; i++ {
 		if vowels[s[i]] {
-			maxVowelCount++
+			maxVowel++
 		}
 	}
 
-	secondVowels := maxVowelCount
+	current := maxVowel
 	for i := k; i < len(s); i++ {
 
 		if vowels[s[i-k]] {
-			secondVowels--
+			current--
 		}
 
 		if vowels[s[i]] {
-			secondVowels++
+			current++
 		}
 
-		if secondVowels > maxVowelCount {
-			maxVowelCount = secondVowels
+		if current > maxVowel {
+			maxVowel = current
 		}
 	}
 
-	return maxVowelCount
+	return maxVowel
 }
