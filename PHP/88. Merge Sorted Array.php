@@ -1,15 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $nums1
      * @param  int[]  $nums2
-     *
-     * @noinspection PhpUnused
      */
     public function merge(array &$nums1, int $m, array $nums2, int $n): void
     {
