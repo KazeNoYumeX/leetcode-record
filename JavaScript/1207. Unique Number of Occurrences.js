@@ -1,5 +1,10 @@
 // noinspection JSUnusedGlobalSymbols
-const uniqueOccurrences = (arr: number[]): boolean => {
+
+/**
+ * @param {number[]} arr
+ * @return {boolean}
+ */
+const uniqueOccurrences = (arr) => {
   const map = new Map()
 
   for (let i = 0; i < arr.length; i++) {

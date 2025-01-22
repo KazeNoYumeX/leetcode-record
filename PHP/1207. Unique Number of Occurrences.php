@@ -1,14 +1,14 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $arr
-     *
-     * @noinspection PhpUnused
      */
     public function uniqueOccurrences(array $arr): bool
     {
