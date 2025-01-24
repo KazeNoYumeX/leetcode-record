@@ -1,27 +1,9 @@
 <?php
 
 /**
- * Definition for a binary tree node.
- */
-class TreeNode
-{
-    public $val = null;
-
-    public $left = null;
-
-    public $right = null;
-
-    public function __construct($val = 0, $left = null, $right = null)
-    {
-        $this->val = $val;
-        $this->left = $left;
-        $this->right = $right;
-    }
-}
-
-/**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
@@ -30,29 +12,57 @@ class Solution
      */
     public function levelOrder(?TreeNode $root): array
     {
-        $queue = [$root];
-        $ret = [];
+        if (! $root) {
+            return [];
+        }
 
-        while ($queue[0]) {
-            $qLen = count($queue);
+        $nodes = new SplQueue;
+        $nodes->enqueue($root);
+
+        $tree = [];
+
+        while ($nodes->count() > 0) {
+            $length = count($nodes);
             $row = [];
-            for ($i = 0; $i < $qLen; $i++) {
-                $curr = array_shift($queue);
-                if ($curr) {
-                    $row[] = $curr->val;
 
-                    if ($curr->left) {
-                        $queue[] = $curr->left;
+            for ($i = 0; $i < $length; $i++) {
+                $node = $nodes->dequeue();
+
+                if ($node) {
+                    $row[] = $node->val;
+
+                    if ($node->left) {
+                        $nodes[] = $node->left;
                     }
 
-                    if ($curr->right) {
-                        $queue[] = $curr->right;
+                    if ($node->right) {
+                        $nodes[] = $node->right;
                     }
                 }
             }
-            $ret[] = $row;
+
+            $tree[] = $row;
         }
 
-        return $ret;
+        return $tree;
+    }
+}
+
+/**
+ * Definition for a binary tree node.
+ */
+class TreeNode
+{
+    public ?int $val = null;
+
+    public ?TreeNode $left = null;
+
+    public ?TreeNode $right = null;
+
+    public function __construct($val = 0, $left = null, $right = null)
+    {
+        $this->val = $val;
+        $this->left = $left;
+        $this->right = $right;
     }
 }
