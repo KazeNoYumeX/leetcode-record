@@ -1,11 +1,17 @@
 // noinspection JSUnusedGlobalSymbols
-const closeStrings = (word1: string, word2: string): boolean => {
+
+/**
+ * @param {string} word1
+ * @param {string} word2
+ * @return {boolean}
+ */
+const closeStrings = (word1, word2) => {
   if (word1.length !== word2.length) {
     return false
   }
 
-  const word1Map: Map<string, number> = new Map()
-  const word2Map: Map<string, number> = new Map()
+  const word1Map = new Map()
+  const word2Map = new Map()
 
   for (const char of word1) {
     word1Map.set(char, (word1Map.get(char) || 0) + 1)
