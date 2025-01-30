@@ -1,8 +1,13 @@
 // noinspection JSUnusedGlobalSymbols
-const equalPairs = (grid: number[][]): number => {
-  const length: number = grid.length
-  const rows = new Map<string, number>()
-  const cols = new Map<string, number>()
+
+/**
+ * @param {number[][]} grid
+ * @return {number}
+ */
+const equalPairs = (grid) => {
+  const length = grid.length
+  const rows = new Map()
+  const cols = new Map()
 
   for (let i = 0; i < length; i++) {
     const col = []
@@ -21,7 +26,7 @@ const equalPairs = (grid: number[][]): number => {
 
   for (const [key, value] of cols.entries()) {
     if (rows.has(key)) {
-      pairs += value * rows.get(key)!
+      pairs += value * rows.get(key)
     }
   }
 
