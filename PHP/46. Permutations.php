@@ -1,42 +1,48 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    private array $ret;
-
-    public function __construct()
-    {
-        $this->ret = [];
-    }
-
     /**
      * @param  int[]  $nums
      * @return int[][]
      */
     public function permute(array $nums): array
     {
-        $this->backtrack($nums, []);
+        $permutations = [];
 
-        return $this->ret;
+        $used = array_fill(0, count($nums), false);
+
+        $this->backtrack($permutations, [], $nums, $used);
+
+        return $permutations;
     }
 
-    public function backtrack(array $list, array $temp): void
+    public function backtrack(array &$permutations, array $list, array $nums, array $used): void
     {
-        if (count($temp) === count($list)) {
-            $this->ret[] = [...$temp];
+        $length = count($nums);
+        if (count($list) === $length) {
+            $permutations[] = $list;
+
+            return;
         }
 
-        foreach ($list as $num) {
-            if (array_key_exists($num, $temp)) {
+        for ($i = 0; $i < $length; $i++) {
+            if ($used[$i]) {
                 continue;
             }
 
-            $temp[] = $num;
-            $this->backtrack($list, $temp);
-            array_pop($temp);
+            $used[$i] = true;
+
+            $list[] = $nums[$i];
+            $this->backtrack($permutations, $list, $nums, $used);
+            array_pop($list);
+
+            $used[$i] = false;
         }
     }
 }

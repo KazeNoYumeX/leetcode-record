@@ -1,11 +1,6 @@
 // noinspection JSUnusedGlobalSymbols
-
-/**
- * @param {number[]} nums
- * @return {number[][]}
- */
-const permute = (nums) => {
-  const permutations = []
+const permute = (nums: number[]): number[][] => {
+  const permutations: number[][] = []
 
   const used = Array(nums.length).fill(false)
 
@@ -14,7 +9,7 @@ const permute = (nums) => {
   return permutations
 }
 
-const backtrack = (permutations, list, nums, used) => {
+const backtrack = (permutations: number[][], list: number[], nums: number[], used: boolean[]): void => {
   const length = nums.length
 
   if (list.length === length) {
