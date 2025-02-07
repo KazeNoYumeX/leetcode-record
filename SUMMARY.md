@@ -20,6 +20,7 @@
 - [55. Jump Game](problems/55.-jump-game.md)
 - [56. Merge Intervals](problems/56.-merge-intervals.md)
 - [57. Insert Interval](problems/57.-insert-interval.md)
+- [77. Combinations](problems/77.-combinations.md)
 - [78. Subsets](problems/78.-subsets.md)
 - [80. Remove Duplicates from Sorted Array II](problems/80.-remove-duplicates-from-sorted-array-ii.md)
 - [88. Merge Sorted Array](problems/88.-merge-sorted-array.md)
