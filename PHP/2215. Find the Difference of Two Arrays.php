@@ -3,6 +3,7 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
@@ -10,8 +11,6 @@ class Solution
      * @param  int[]  $nums1
      * @param  int[]  $nums2
      * @return int[][]
-     *
-     * @noinspection PhpUnused
      */
     public function findDifference(array $nums1, array $nums2): array
     {
