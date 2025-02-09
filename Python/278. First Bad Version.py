@@ -1,14 +1,22 @@
 # The isBadVersion API is already defined for you.
 # def isBadVersion(version: int) -> bool:
 
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        i, j = 1, n
+        left = 1
 
-        while i < j:
-            k = int((i + j) / 2)
-            if isBadVersion(k):
-                j = k
+        while left <= n:
+            mid = left + (n - left) // 2
+
+            if isBadVersion(mid):
+                n = mid - 1
             else:
-                i = k + 1
-        return i
+                left = mid + 1
+
+        return left
+
+
+# noinspection PyMethodMayBeStatic, PyPep8Naming
+def isBadVersion(version: int) -> bool:
+    return version is True
