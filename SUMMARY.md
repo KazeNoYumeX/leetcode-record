@@ -15,6 +15,7 @@
 - [21. Merge Two Sorted Lists](problems/21.-merge-two-sorted-lists.md)
 - [26. Remove Duplicates from Sorted Array](problems/26.-remove-duplicates-from-sorted-array.md)
 - [27. Remove Element](problems/27.-remove-element.md)
+- [37. Sudoku Solver](problems/37.-sudoku-solver.md)
 - [46. Permutations](problems/46.-permutations.md)
 - [47. Permutations II](problems/47.-permutations-ii.md)
 - [55. Jump Game](problems/55.-jump-game.md)
