@@ -147,6 +147,7 @@
 - [1934. Confirmation Rate](problems/1934.-confirmation-rate.md)
 - [1965. Employees With Missing Information](problems/1965.-employees-with-missing-information.md)
 - [1978. Employees Whose Manager Left the Company](problems/1978.-employees-whose-manager-left-the-company.md)
+- [1979. Find Greatest Common Divisor of Array](problems/1979.-find-greatest-common-divisor-of-array.md)
 - [2215. Find the Difference of Two Arrays](problems/2215.-find-the-difference-of-two-arrays.md)
 - [2352. Equal Row and Column Pairs](problems/2352.-equal-row-and-column-pairs.md)
 - [2356. Number of Unique Subjects Taught by Each Teacher](problems/2356.-number-of-unique-subjects-taught-by-each-teacher.md)
