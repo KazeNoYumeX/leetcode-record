@@ -17,8 +17,12 @@ class Solution
     }
 
     /** Euclidean Algorithm */
-    public function gcd(int $a, int $b): int
+    public function gcd(int $former, int $latter): int
     {
-        return $b === 0 ? $a : $this->gcd($b, $a % $b);
+        if ($latter === 0) {
+            return $former;
+        }
+
+        return $this->gcd($latter, $former % $latter);
     }
 }
