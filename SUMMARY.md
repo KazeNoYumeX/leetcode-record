@@ -153,3 +153,4 @@
 - [2356. Number of Unique Subjects Taught by Each Teacher](problems/2356.-number-of-unique-subjects-taught-by-each-teacher.md)
 - [2390. Removing Stars From a String](problems/2390.-removing-stars-from-a-string.md)
 - [2447. Number of Subarrays With GCD Equal to K](problems/2447.-number-of-subarrays-with-gcd-equal-to-k.md)
+- [2470. Number of Subarrays With LCM Equal to K](problems/2470.-number-of-subarrays-with-lcm-equal-to-k.md)
