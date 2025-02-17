@@ -42,6 +42,7 @@
 - [197. Rising Temperature](problems/197.-rising-temperature.md)
 - [205. Isomorphic Strings](problems/205.-isomorphic-strings.md)
 - [206. Reverse Linked List](problems/206.-reverse-linked-list.md)
+- [207. Course Schedule](problems/207.-course-schedule.md)
 - [218. The Skyline Problem](problems/218.-the-skyline-problem.md)
 - [252. Meeting Rooms](problems/252.-meeting-rooms.md)
 - [253. Meeting Rooms II](problems/253.-meeting-rooms-ii.md)
