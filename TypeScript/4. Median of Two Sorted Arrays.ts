@@ -1,11 +1,5 @@
 // noinspection JSUnusedGlobalSymbols
-
-/**
- * @param {number[]} nums1
- * @param {number[]} nums2
- * @return {number}
- */
-const findMedianSortedArrays = (nums1, nums2) => {
+const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
   const length1 = nums1.length
   const length2 = nums2.length
 
