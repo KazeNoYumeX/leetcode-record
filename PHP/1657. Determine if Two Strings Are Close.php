@@ -3,12 +3,10 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function closeStrings(string $word1, string $word2): bool
     {
         if (strlen($word1) !== strlen($word2)) {
