@@ -21,6 +21,7 @@
 - [57. Insert Interval](problems/57.-insert-interval.md)
 - [80. Remove Duplicates from Sorted Array II](problems/80.-remove-duplicates-from-sorted-array-ii.md)
 - [88. Merge Sorted Array](problems/88.-merge-sorted-array.md)
+- [94. Binary Tree Inorder Traversal](problems/94.-binary-tree-inorder-traversal.md)
 - [102. Binary Tree Level Order Traversal](problems/102.-binary-tree-level-order-traversal.md)
 - [104. Maximum Depth of Binary Tree](problems/104.-maximum-depth-of-binary-tree.md)
 - [111. Minimum Depth of Binary Tree](problems/111.-minimum-depth-of-binary-tree.md)
