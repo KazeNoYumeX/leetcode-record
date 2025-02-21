@@ -87,6 +87,7 @@
 - [626. Exchange Seats](problems/626.-exchange-seats.md)
 - [627. Swap Salary](problems/627.-swap-salary.md)
 - [643. Maximum Average Subarray I](problems/643.-maximum-average-subarray-i.md)
+- [680. Valid Palindrome II](problems/680.-valid-palindrome-ii.md)
 - [704. Binary Search](problems/704.-binary-search.md)
 - [724. Find Pivot Index](problems/724.-find-pivot-index.md)
 - [735. Asteroid Collision](problems/735.-asteroid-collision.md)
