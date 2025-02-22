@@ -45,6 +45,7 @@
 - [181. Employees Earning More Than Their Managers](problems/181.-employees-earning-more-than-their-managers.md)
 - [182. Duplicate Emails](problems/182.-duplicate-emails.md)
 - [183. Customers Who Never Order](problems/183.-customers-who-never-order.md)
+- [185. Department Top Three Salaries](problems/185.-department-top-three-salaries.md)
 - [189. Rotate Array](problems/189.-rotate-array.md)
 - [196. Delete Duplicate Emails](problems/196.-delete-duplicate-emails.md)
 - [197. Rising Temperature](problems/197.-rising-temperature.md)
