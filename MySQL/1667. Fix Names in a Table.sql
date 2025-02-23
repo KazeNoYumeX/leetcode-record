@@ -14,6 +14,6 @@ insert into Users (user_id, name)
 values ('2', 'bOB');
 
 # Solution
-select user_id, concat(UPPER(SUBSTR(name, 1, 1)), LOWER(SUBSTR(name, 2))) as name
+select user_id, concat(upper(left(name, 1)), lower(substr(name, 2))) as name
 from Users
 order by user_id;
