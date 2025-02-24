@@ -64,6 +64,7 @@
 - [570. Managers with at Least 5 Direct Reports](problems/570.-managers-with-at-least-5-direct-reports.md)
 - [577. Employee Bonus](problems/577.-employee-bonus.md)
 - [584. Find Customer Referee](problems/584.-find-customer-referee.md)
+- [585. Investments in 2016](problems/585.-investments-in-2016.md)
 - [586. Customer Placing the Largest Number of Orders](problems/586.-customer-placing-the-largest-number-of-orders.md)
 - [589. N-ary Tree Preorder Traversal](problems/589.-n-ary-tree-preorder-traversal.md)
 - [595. Big Countries](problems/595.-big-countries.md)
