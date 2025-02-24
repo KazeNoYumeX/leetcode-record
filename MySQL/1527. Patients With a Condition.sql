@@ -26,4 +26,5 @@ values ('5', 'Alain', 'DIAB201');
 # Solution
 select *
 from Patients
-where conditions regexp '(^DIAB1|(.*\\sDIAB1))'
+where conditions like 'DIAB1%'
+   or conditions like '% DIAB1%';
