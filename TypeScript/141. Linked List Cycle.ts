@@ -1,18 +1,28 @@
-interface ListNode {
-    val: number | null | undefined
-    next: ListNode | null | undefined
+class ListNode {
+  val: number
+  next: ListNode | null
+  constructor(val?: number, next?: ListNode | null) {
+    this.val = val === undefined ? 0 : val
+    this.next = next === undefined ? null : next
+  }
 }
 
+// noinspection JSUnusedGlobalSymbols
 const hasCycle = (head: ListNode | null): boolean => {
-    let slow: ListNode | null = head, fast: ListNode | null = head
-
-    while (fast && fast.next) {
-        slow = slow.next
-        fast = fast.next.next
-
-        if (slow == fast) {
-            return true
-        }
-    }
+  if (head === null || head.next === null) {
     return false
+  }
+
+  let slow: ListNode | null | undefined = head
+  let fast: ListNode | null = head
+
+  while (fast !== null && fast.next !== null) {
+    slow = slow?.next
+    fast = fast.next.next
+
+    if (slow === fast) {
+      return true
+    }
+  }
+  return false
 }

@@ -7,11 +7,13 @@ class ListNode:
         self.next = next
 
 
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow = fast = head
         while fast and fast.next:
-            slow, fast = slow.next, fast.next.next
+            slow = slow.next
+            fast = fast.next.next
             if slow == fast:
                 return True
         return False
