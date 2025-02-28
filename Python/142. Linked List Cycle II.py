@@ -7,14 +7,17 @@ class ListNode:
         self.next = next
 
 
-# noinspection PyMethodMayBeStatic
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         slow = fast = head
         while fast and fast.next:
-            slow, fast = slow.next, fast.next.next
+            slow = slow.next
+            fast = fast.next.next
             if slow == fast:
-                slow = head
+                fast = head
                 while slow != fast:
-                    slow, fast = slow.next, fast.next
+                    slow = slow.next
+                    fast = fast.next
                 return slow
+        return None

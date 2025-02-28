@@ -1,13 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection, PhpMultipleClassesDeclarationsInOneFile
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class ListNode
 {
-    public mixed $val = 0;
+    public int $val = 0;
 
-    public mixed $next = null;
+    public ?ListNode $next = null;
 
     public function __construct($val = 0)
     {
@@ -17,20 +19,23 @@ class ListNode
 
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function detectCycle(?ListNode $head): ?ListNode
     {
-        $map = new splObjectStorage();
-        while ($head) {
-            if ($map->offsetExists($head)) {
-                return $head;
+        $slow = $fast = $head;
+        while ($fast !== null && $fast->next !== null) {
+            $slow = $slow->next;
+            $fast = $fast->next->next;
+            if ($slow === $fast) {
+                $fast = $head;
+                while ($slow !== $fast) {
+                    $slow = $slow->next;
+                    $fast = $fast->next;
+                }
+
+                return $slow;
             }
-            $map->attach($head);
-            $head = $head->next;
         }
 
-        return $head;
+        return null;
     }
 }
