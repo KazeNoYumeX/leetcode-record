@@ -3,14 +3,13 @@
 /**
  * @noinspection PhpIllegalPsrClassPathInspection
  * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $asteroids
      * @return int[]
-     *
-     * @noinspection PhpUnused
      */
     public function asteroidCollision(array $asteroids): array
     {
@@ -21,21 +20,23 @@ class Solution
 
             if ($current > 0) {
                 $stack[] = $current;
-            } else {
-                $absCurrent = abs($current);
 
-                while (count($stack) > 0 && end($stack) > 0 && end($stack) < $absCurrent) {
-                    array_pop($stack);
-                }
+                continue;
+            }
 
-                $endStack = end($stack);
-                $stackLength = count($stack);
+            $absCurrent = abs($current);
 
-                if ($stackLength > 0 && $endStack === $absCurrent) {
-                    array_pop($stack);
-                } elseif ($stackLength === 0 || $endStack < 0) {
-                    $stack[] = $current;
-                }
+            while (count($stack) > 0 && end($stack) > 0 && end($stack) < $absCurrent) {
+                array_pop($stack);
+            }
+
+            $endStack = end($stack);
+            $stackLength = count($stack);
+
+            if ($stackLength > 0 && $endStack === $absCurrent) {
+                array_pop($stack);
+            } elseif ($stackLength === 0 || $endStack < 0) {
+                $stack[] = $current;
             }
         }
 
