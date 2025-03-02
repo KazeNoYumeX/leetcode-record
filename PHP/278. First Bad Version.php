@@ -1,30 +1,33 @@
 <?php
 
-/* The isBadVersion API is defined in the parent class VersionControl.
-      public function isBadVersion($version){} */
-
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection
- *  @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution extends VersionControl
 {
-    /**
-     * @param  int  $n
-     */
-    public function firstBadVersion($n): int
+    public function firstBadVersion(int $n): int
     {
-        $curr = 1;
+        $left = 1;
 
-        while ($curr < $n) {
-            $mid = intval(($curr + $n) / 2);
+        while ($left <= $n) {
+            $mid = $left + (int) (($n - $left) / 2);
             if ($this->isBadVersion($mid)) {
-                $n = $mid;
+                $n = $mid - 1;
             } else {
-                $curr = $mid + 1;
+                $left = $mid + 1;
             }
         }
 
-        return $curr;
+        return $left;
+    }
+}
+
+class VersionControl
+{
+    public function isBadVersion(int $version): bool
+    {
+        return $version;
     }
 }
