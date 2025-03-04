@@ -67,6 +67,7 @@
 - [409. Longest Palindrome](problems/409.-longest-palindrome.md)
 - [410. Split Array Largest Sum](problems/410.-split-array-largest-sum.md)
 - [443. String Compression](problems/443.-string-compression.md)
+- [496. Next Greater Element I](problems/496.-next-greater-element-i.md)
 - [509. Fibonacci Number](problems/509.-fibonacci-number.md)
 - [511. Game Play Analysis I](problems/511.-game-play-analysis-i.md)
 - [550. Game Play Analysis IV](problems/550.-game-play-analysis-iv.md)
