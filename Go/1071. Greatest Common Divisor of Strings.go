@@ -9,10 +9,10 @@ func gcdOfStrings(str1, str2 string) string {
 	return str1[:gcd(len(str1), len(str2))]
 }
 
-func gcd(a, b int) int {
-	if b == 0 {
-		return a
+func gcd(former int, latter int) int {
+	if latter == 0 {
+		return former
 	}
 
-	return gcd(b, a%b)
+	return gcd(latter, former%latter)
 }
