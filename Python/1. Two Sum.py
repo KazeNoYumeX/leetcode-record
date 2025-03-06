@@ -1,14 +1,14 @@
 from typing import List
 
 
-# noinspection PyMethodMayBeStatic
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        tmp = {}
+        map = {}
 
         for i, num in enumerate(nums):
-            if target - num in tmp:
-                return [tmp[target - num], i]
-            tmp[num] = i
+            if target - num in map:
+                return [map[target - num], i]
+            map[num] = i
 
         return [-1, -1]

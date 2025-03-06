@@ -1,15 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[]  $nums
      * @return int[]
-     *
-     * @noinspection PhpUnused
      */
     public function twoSum(array $nums, int $target): array
     {
