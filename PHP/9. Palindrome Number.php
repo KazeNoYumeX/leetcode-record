@@ -1,15 +1,13 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
-    /**
-     * @param  int  $x
-     * @return bool
-     */
-    public function isPalindrome($x)
+    public function isPalindrome(int $x): bool
     {
         return "$x" === strrev("$x");
     }

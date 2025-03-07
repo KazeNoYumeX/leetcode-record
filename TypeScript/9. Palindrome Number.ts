@@ -1,9 +1,5 @@
 // noinspection JSUnusedGlobalSymbols
-/**
- * @param {number} x
- * @return {boolean}
- */
-const isPalindrome = (x) => {
+const isPalindrome = (x: number): boolean => {
   if (x < 0 || (x % 10 === 0 && x !== 0)) {
     return false
   }
