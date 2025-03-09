@@ -18,6 +18,7 @@
 - [37. Sudoku Solver](problems/37.-sudoku-solver.md)
 - [46. Permutations](problems/46.-permutations.md)
 - [47. Permutations II](problems/47.-permutations-ii.md)
+- [50. Pow(x, n)](problems/50.-pow-x-n.md)
 - [55. Jump Game](problems/55.-jump-game.md)
 - [56. Merge Intervals](problems/56.-merge-intervals.md)
 - [57. Insert Interval](problems/57.-insert-interval.md)
