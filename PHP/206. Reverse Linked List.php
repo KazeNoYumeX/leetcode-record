@@ -1,34 +1,38 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection, PhpMultipleClassesDeclarationsInOneFile
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class ListNode
 {
-    public mixed $val = 0;
+    public int $val = 0;
 
-    public mixed $next = null;
+    public ?ListNode $next = null;
 
-    public function __construct($val = 0, $next = null)
+    public function __construct($val = 0)
     {
         $this->val = $val;
-        $this->next = $next;
     }
 }
 
 class Solution
 {
-    /**
-     * @noinspection PhpUnused
-     */
     public function reverseList(?ListNode $head): ?ListNode
     {
-        $prev = null;
+        return $this->reverse($head, null);
+    }
 
-        while ($head) {
-            [$head->next, $prev, $head] = [$prev, $head, $head->next];
+    private function reverse(?ListNode $head, ?ListNode $next): ?ListNode
+    {
+        if ($head === null) {
+            return $next;
         }
 
-        return $prev;
+        $current = $head->next;
+        $head->next = $next;
+
+        return $this->reverse($current, $head);
     }
 }

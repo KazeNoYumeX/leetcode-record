@@ -7,10 +7,16 @@ class ListNode:
         self.next = next
 
 
-# noinspection PyMethodMayBeStatic
+# noinspection PyMethodMayBeStatic, PyPep8Naming
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        prev = None
-        while head:
-            head.next, prev, head = prev, head, head.next
-        return prev
+        return self.reverse(head, None)
+
+    def reverse(self, head: Optional[ListNode], next: Optional[ListNode]) -> Optional[ListNode]:
+        if head is None:
+            return next
+
+        current = head.next
+        head.next = next
+
+        return self.reverse(current, head)

@@ -1,23 +1,19 @@
 // noinspection JSUnusedGlobalSymbols
-
-/**
- * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
- */
-
 /**
  * @param {ListNode} head
  * @return {ListNode}
  */
 const reverseList = (head) => {
-    let prev = null
+  return reverse(head, null)
+}
 
-    while (head) {
-        [head.next, prev, head] = [prev, head, head.next]
-    }
+const reverse = (head, next) => {
+  if (head === null) {
+    return next
+  }
 
-    return prev
+  const current = head.next
+  head.next = next
+
+  return reverse(current, head)
 }

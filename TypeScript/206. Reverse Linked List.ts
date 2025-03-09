@@ -1,16 +1,15 @@
 // noinspection JSUnusedGlobalSymbols
-
-interface ListNode {
-    val: number | null | undefined
-    next: ListNode | null | undefined
+const reverseList = (head: ListNode | null): ListNode | null => {
+  return reverse(head, null)
 }
 
-const reverseList = (head: ListNode | null): ListNode | null => {
-    let prev: ListNode | null = null
+const reverse = (head: ListNode | null, next: ListNode | null): ListNode | null => {
+  if (head === null) {
+    return next
+  }
 
-    while (head) {
-        // @ts-ignore
-        [head.next, prev, head] = [prev, head, head.next]
-    }
-    return prev
+  const current = head.next
+  head.next = next
+
+  return reverse(current, head)
 }
