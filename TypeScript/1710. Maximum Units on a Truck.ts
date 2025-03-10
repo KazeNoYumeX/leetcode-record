@@ -1,11 +1,5 @@
 // noinspection JSUnusedGlobalSymbols
-
-/**
- * @param {number[][]} boxTypes
- * @param {number} truckSize
- * @return {number}
- */
-const maximumUnits = (boxTypes, truckSize) => {
+const maximumUnits = (boxTypes: number[][], truckSize: number): number => {
   let boxes = 0
 
   boxTypes = boxTypes.sort((a, b) => b[1] - a[1])
