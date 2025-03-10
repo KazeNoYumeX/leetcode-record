@@ -1,15 +1,15 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[][]  $intervals
      * @return int[][]
-     *
-     * @noinspection PhpUnused
      */
     public function merge(array $intervals): array
     {
