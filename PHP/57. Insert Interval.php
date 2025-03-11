@@ -1,7 +1,9 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
@@ -9,8 +11,6 @@ class Solution
      * @param  int[][]  $intervals
      * @param  int[]  $newInterval
      * @return int[][]
-     *
-     * @noinspection PhpUnused
      */
     public function insert(array $intervals, array $newInterval): array
     {
