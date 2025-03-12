@@ -1,14 +1,14 @@
 <?php
 
 /**
- *  @noinspection PhpIllegalPsrClassPathInspection, PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpIllegalPsrClassPathInspection
+ * @noinspection PhpMultipleClassDeclarationsInspection
+ * @noinspection PhpUnused
  */
 class Solution
 {
     /**
      * @param  int[][]  $intervals
-     *
-     * @noinspection PhpUnused
      */
     public function removeCoveredIntervals(array $intervals): int
     {
